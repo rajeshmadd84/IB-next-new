@@ -1,37 +1,51 @@
 export const faqs = [
   {
     id: 1,
-    title: "Generate copy in seconds ?",
+    title: "How does IntelliByld’s Agentic AI differ?",
     content:
-      "Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium totam rem aperiam eaque quae abillo inventore veritatis",
+      "IntelliByld does not just track data. It predicts delays, recommends decisions, and automatically triggers the next logistics action.",
     active: true,
   },
   {
     id: 2,
-    title: "Why Importance Of Copy.Ai ?",
+    title: "What role does the Digital Twin play in IntelliByld’s supply chain management?",
     content:
-      "Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium totam rem aperiam eaque quae abillo inventore veritatis",
+      "The Digital Twin mirrors live site and supply activity, so teams can test scenarios, catch bottlenecks early, and optimize plans before execution.",
     active: false,
   },
   {
     id: 3,
-    title: "Need Any Team Members ?",
+    title: "Can IntelliByld integrate with my existing BIM and ERP systems?",
     content:
-      "Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium totam rem aperiam eaque quae abillo inventore veritatis",
+      "Yes. IntelliByld connects with BIM, ERP, and PM tools to unify fragmented data into one actionable operational view.",
     active: false,
   },
   {
     id: 4,
-    title: "What Is Artificial Intelligence ?",
+    title: "How does IntelliByld support Singapore’s Integrated Digital Delivery (IDD) framework?",
     content:
-      "Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium totam rem aperiam eaque quae abillo inventore veritatis",
+      "IntelliByld supports IDD by linking design, fabrication, construction, and delivery data into a single ground-truth workflow aligned to BCA expectations.",
     active: false,
   },
   {
     id: 5,
-    title: "Why We Get Artificial Intelligence Services ?",
+    title: "How does IntelliByld support BCA Site Management Data Standards?",
     content:
-      "Sed ut perspiciatis unde omnis iste natus sit voluptatem accusantium totam rem aperiam eaque quae abillo inventore veritatis",
+      "It automates site data capture, traceability, and documentation so teams stay audit-ready for BCA Level 3 digital compliance.",
+    active: false,
+  },
+  {
+    id: 6,
+    title: "How does the platform handle Ground-Truth data collection?",
+    content:
+      "IntelliByld uses verified field inputs from site logs, IoT signals, and workflow events so decisions are based on what is happening now.",
+    active: false,
+  },
+  {
+    id: 7,
+    title: "What are the expected efficiency gains when using IntelliByld?",
+    content:
+      "Teams typically target lower material waste, fewer coordination hours, and faster recovery from disruptions through earlier risk prediction.",
     active: false,
   },
 ];

@@ -15,14 +15,11 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              We denounce with righteous indignation and dislike <br />
-              men who are beguiled and demoralized by the charms <br />
-              pleasure of the moment blinded by desire
+              IntelliByld helps construction teams orchestrate supply <br />
+              chain decisions with Agentic AI and Digital Twins <br />
+              for faster execution, lower risk, and full visibility
             </p>
-            <a href="#" className="tf-button style-2 mb-15">
-              <span>Learn More</span>
-              <i className="icon-arrow-right2" />
-            </a>
+           
           </div>
           <div className="col-md-7">
             <div className="flat-accordion">

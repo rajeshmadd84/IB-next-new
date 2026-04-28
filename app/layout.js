@@ -19,6 +19,9 @@ export default function RootLayout({ children }) {
 
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/png" href="/assets/images/icon.png" />
+      </head>
       <body>
         <ToastContainer
           position="top-right"

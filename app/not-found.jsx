@@ -2,7 +2,7 @@ import Footer1 from "@/components/footers/Footer1";
 import Header1 from "@/components/headers/Header1";
 import Cta from "@/components/homes/home-1/Cta";
 
-import Mouse from "@/components/common/Mouse";
+
 import Link from "next/link";
 import Image from "next/image";
 import ScrollTop from "@/components/common/ScrollTop";
@@ -81,7 +81,7 @@ export default function Home() {
           <Footer1 />
         </div>
       </div>
-      <Mouse />
+
       <ScrollTop />
     </>
   );

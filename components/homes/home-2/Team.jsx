@@ -13,7 +13,7 @@ export default function Team() {
               <div className="main-title" style={{ color: "#fff" }}>
                 Meet our core 
                 {" "}
-                <span className="animation-text">Team</span>
+                <span className="animation-text tf-color-green">Team</span>
               </div>
             </div>
           </div>

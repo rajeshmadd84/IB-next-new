@@ -9,9 +9,9 @@ export default function Footer2() {
       className="style-1"
       style={{
         background: "linear-gradient(180deg, #0a1a17 0%, #0d0d0d 100%)",
-        marginBottom: "30px",
-        paddingTop: "100px",
-        paddingBottom: "40px",
+        marginBottom: "20px",
+        paddingTop: "20px",
+        paddingBottom: "10px",
       }}
     >
       <div className="item-1" />
