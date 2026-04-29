@@ -10,8 +10,8 @@ export default function Faq() {
             <div className="heading-section wow fadeInUp style-1">
               <h6 className="tf-color-green">FAQs</h6>
               <div className="main-title">
-                Frequently Asked{" "}
-                <span className="animation-text tf-color-green">questions</span>
+                Know more about {" "}
+                <span className="animation-text tf-color-green">IntelliByld</span>
               </div>
             </div>
             <p className="text">

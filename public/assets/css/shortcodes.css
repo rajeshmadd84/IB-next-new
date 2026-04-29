@@ -1943,7 +1943,7 @@ ul.list-item li {
 }
 
 ul.list-item li .icon-tick::before {
-  color: #6844ed;
+  color: #2563EB;
 }
 
 /* list-tool */
@@ -1980,7 +1980,7 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-tool:hover {
-  border: 1px solid #6844ed;
+  border: 1px solid #2563EB;
   box-shadow: 0px 10px 60px 0px rgba(0, 0, 0, 0.1);
 }
 
@@ -1999,7 +1999,7 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-tool h3 a:hover {
-  color: #6844ed;
+  color: #2563EB;
 }
 
 .wg-tool .order {
@@ -2069,7 +2069,7 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-helpful:hover {
-  border: 1px solid #6844ed;
+  border: 1px solid #2563EB;
   background: #fff;
   box-shadow: 0px 10px 60px 0px rgba(104, 68, 237, 0.2);
 }
@@ -2092,12 +2092,12 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-helpful:hover .image {
-  background: #6844ed;
+  background: #2563EB;
   box-shadow: 0px 7px 40px rgba(104, 68, 237, 0.6);
 }
 
 .wg-helpful .image span::before {
-  color: #6844ed;
+  color: #2563EB;
   font-size: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -2116,7 +2116,7 @@ ul.list-item li .icon-tick::before {
 }
 
 .wg-helpful h6 a:hover {
-  color: #6844ed;
+  color: #2563EB;
 }
 
 /* style-1 */
