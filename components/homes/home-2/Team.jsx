@@ -4,7 +4,11 @@ import Image from "next/image";
 
 export default function Team() {
   return (
-    <div className="wg-members pt-130 pb-130">
+    <div className="wg-members pt-130 pb-130 home2-banner-bg">
+      <div className="bg-item">
+        <div className="item-1" />
+        <div className="item-2" />
+      </div>
       <div className="themesflat-container">
         <div className="row items-center">
           <div className="col-12">
@@ -15,6 +19,9 @@ export default function Team() {
                 {" "}
                 <span className="animation-text tf-color-green">Team</span>
               </div>
+              <p style={{ color: "#fff", fontSize: "18px", lineHeight: "30px", marginTop: 18, marginBottom: 0 }}>
+                We build IntelliByld’s digital workforce: Agentic AI and living Digital Twins that turn construction supply chain data into execution.
+              </p>
             </div>
           </div>
           {teamMembers.map((member, index) => {

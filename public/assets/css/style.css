@@ -1457,7 +1457,8 @@ a:focus {
 
 /* mobile header */
 .mobile-nav-wrap .overlay-mobile-nav {
-  cursor: url(../images/close.svg), auto;
+  /* Use default cursor instead of custom close.svg cursor */
+  cursor: pointer;
   content: "";
   position: fixed;
   left: 0;

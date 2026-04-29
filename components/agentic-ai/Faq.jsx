@@ -15,9 +15,9 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              Common questions about how our Agentic AI <br />
-              automates construction supply chain workflows <br />
-              and delivers autonomous execution.
+              <strong>IntelliByld’s Agentic AI predicts delays, recommends decisions, and triggers the next logistics action automatically.</strong>
+              <br />
+              Below are common questions about how it automates construction supply chain workflows and delivers autonomous execution.
             </p>
           </div>
           <div className="col-lg-7">

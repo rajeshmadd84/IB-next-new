@@ -4,9 +4,13 @@ import Image from "next/image";
 export default function DigitalTwin() {
   return (
     <div
-      className="wg-create-design style-2 pb-130 pt-130 home2-digitaltwin-mobile-gap"
+      className="wg-create-design style-2 pb-130 pt-130 home2-digitaltwin-mobile-gap home2-banner-bg"
       style={{ paddingBottom: 90 }}
     >
+      <div className="bg-item">
+        <div className="item-1" />
+        <div className="item-2" />
+      </div>
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-5">
@@ -19,12 +23,10 @@ export default function DigitalTwin() {
                 </div>
               </div>
               <p style={{ color: "#fff" }}>
-                Traditional BIM models are static snapshots. Intellibyld creates
-                a dynamic, virtual replica of your construction supply chain
-                that evolves in real-time. By linking every material movement to
-                your master project schedule, we eliminate the
-                &ldquo;Integration Trap&rdquo; and ensure your digital model
-                perfectly mirrors your physical site reality.
+                <strong>Intellibyld’s Digital Twin creates a living, real-time replica</strong>{" "}
+                of your construction supply chain.
+                It links every material movement to your master project schedule,
+                eliminating the &ldquo;Integration Trap&rdquo; so your digital model mirrors physical site reality.
               </p>
               <a href="/digital-twins" className="tf-button style-2 mt-20">
                 <span>Learn more</span>

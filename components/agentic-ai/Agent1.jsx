@@ -19,8 +19,9 @@ export default function AgenticAi() {
                 </div>
               </div>
               <p style={{ color: "#000000", fontSize: "18px", lineHeight: "30px" }}>
-                Traditional software waits for you to tell it what happened. <strong>Intellibyld’s Agentic AI</strong> acts on its own to make sure your project stays on track. 
-                By unifying your BIM models, ERP data, and supplier communications into a single <strong>Autonomous Execution Layer</strong>, we’ve moved beyond simple dashboards to a system that proactively manages the heavy lifting of construction logistics.
+                <strong>IntelliByld’s Agentic AI is an autonomous execution layer</strong> that keeps your construction supply chain on track.
+                It unifies your BIM models, ERP data, and supplier communications into a single <strong>Autonomous Execution Layer</strong> that proactively manages the heavy lifting of construction logistics.
+                Traditional software waits for you to tell it what happened, but Agentic AI acts on its own.
               </p>
               <ul
                 className="list-item tick-white"

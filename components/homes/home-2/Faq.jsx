@@ -3,7 +3,11 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="faqs-wrap-1">
+    <div className="faqs-wrap-1 home2-banner-bg">
+      <div className="bg-item">
+        <div className="item-1" />
+        <div className="item-2" />
+      </div>
       <div className="themesflat-container">
         <div className="row">
           <div className="col-md-5">
@@ -15,9 +19,8 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              IntelliByld helps construction teams orchestrate supply <br />
-              chain decisions with Agentic AI and Digital Twins <br />
-              for faster execution, lower risk, and full visibility
+              <strong>IntelliByld helps construction teams orchestrate supply chain decisions</strong> with Agentic AI and Digital Twins.
+              It enables faster execution, lower risk, and full visibility across the project lifecycle.
             </p>
            
           </div>

@@ -3,7 +3,11 @@ import React from "react";
 
 export default function Doing() {
   return (
-    <div className="wg-doing">
+    <div className="wg-doing wg-banner-2 home2-features-show-bg">
+      <div className="bg-item">
+        <div className="item-1" />
+        <div className="item-2" />
+      </div>
       <div className="themesflat-container">
         <div className="row">
           <div className="col-12">
@@ -15,6 +19,21 @@ export default function Doing() {
                 
                 
               </div>
+              <p
+                style={{
+                  color: "#fff",
+                  fontSize: "18px",
+                  lineHeight: "30px",
+                  marginTop: 22,
+                  marginBottom: 0,
+                  maxWidth: 900,
+                  marginLeft: "auto",
+                  marginRight: "auto",
+                }}
+              >
+                <strong>Intellibyld is the OS that turns construction supply chain data into Autonomous Execution.</strong>{" "}
+                It helps teams coordinate procurement, shipping, and bid evaluation so execution stays on schedule.
+              </p>
             </div>
           </div>
           {features.map((item, index) => (

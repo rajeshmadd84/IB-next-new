@@ -225,6 +225,10 @@
     .wg-banner-1 .images {
         display: none;
     }
+    /* Home-2 Features: we want the Banner bg decorations visible */
+    .home2-features-show-bg .bg-item {
+        display: block;
+    }
     .wg-banner-2 .image {
         /* Room for .item-1: top 57px + height 549px + decor */
         min-height: 640px;

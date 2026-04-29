@@ -4,7 +4,11 @@ import Image from "next/image";
 import Counter from "@/components/common/Counter";
 export default function AgenticAi() {
   return (
-    <div className="wg-create-design style-3 pb-130 pt-130" style={{ paddingTop: 90 }}>
+    <div className="wg-create-design style-3 pb-130 pt-130 home2-banner-bg" style={{ paddingTop: 90 }}>
+      <div className="bg-item">
+        <div className="item-1" />
+        <div className="item-2" />
+      </div>
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-6">
@@ -19,9 +23,8 @@ export default function AgenticAi() {
                 </div>
               </div>
               <p style={{ color: "#fff" }}>
-                Stop wasting your team's potential on the "Integration Trap." While legacy systems require manual data entry and constant oversight, Intellibyld’s Agentic AI acts as a tireless digital workforce. 
-                It autonomously manages the complex coordination between your BIM models, ERP data, and thousands of supplier interactions, making real-time decisions that keep your project on track.
-                
+                <strong>Intellibyld’s Agentic AI executes</strong> across your BIM models, ERP data, and supplier communications to keep construction projects on track.
+                It autonomously manages coordination, makes real-time decisions, and triggers the next logistics action without waiting for manual updates.
               </p>
              
               <a href="/agentic-ai" className="tf-button style-2 mt-20">

@@ -14,6 +14,9 @@ export default function Tools() {
                 <br />
                 <span className="tf-color-green">Agentic AI</span>
               </div>
+              <p style={{ color: "#696969", fontSize: "16px", lineHeight: "24px", marginTop: 18, marginBottom: 0 }}>
+                Intellibyld’s Agentic AI helps teams execute construction supply chain workflows autonomously—from RFQ generation to shipment tracking and bid evaluation.
+              </p>
             </div>
           </div>
           {agenticAiTools.map((tool, index) => (
