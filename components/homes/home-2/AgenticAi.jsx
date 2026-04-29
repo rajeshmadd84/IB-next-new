@@ -21,6 +21,7 @@ export default function AgenticAi() {
               <p style={{ color: "#fff" }}>
                 Stop wasting your team's potential on the "Integration Trap." While legacy systems require manual data entry and constant oversight, Intellibyld’s Agentic AI acts as a tireless digital workforce. 
                 It autonomously manages the complex coordination between your BIM models, ERP data, and thousands of supplier interactions, making real-time decisions that keep your project on track.
+                
               </p>
              
               <a href="/agentic-ai" className="tf-button style-2 mt-20">
