@@ -86,16 +86,16 @@ export default function page() {
   const localBusinessSchema = {
     "@context": "https://schema.org",
     "@type": "LocalBusiness",
-    name: "IntelliByld Technologies",
+    name: "IntelliByld",
     image: "https://intellibyld.com/logo.png",
     "@id": "https://intellibyld.com",
     url: "https://intellibyld.com",
-    telephone: "+65XXXXXXXX",
+    telephone: "+6590413331",
     address: {
       "@type": "PostalAddress",
-      streetAddress: "Your Office Address",
+      streetAddress: "21 Pandan Avenue #04-A Senkee Logistics Hub,",
       addressLocality: "Singapore",
-      postalCode: "XXXXXX",
+      postalCode: "609388",
       addressCountry: "SG",
     },
     geo: {
