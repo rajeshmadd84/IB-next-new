@@ -1,37 +1,47 @@
-import Cta from "@/components/common/Cta";
-import Faq1 from "@/components/about/Faq1";
-import Faq2 from "@/components/about/Faq2";
-import Faq3 from "@/components/about/Faq3";
-import Features2 from "@/components/about/Features2";
-
 import FlatTitle2 from "@/components/about/FlatTitle2";
-
-import Mouse from "@/components/common/Mouse";
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer2 from "@/components/footers/Footer2";
+import Header2 from "@/components/headers/Header2";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
+import Faq3 from "@/components/about/Faq3";
+import { faqs4 } from "@/data/faq";
+
 export const metadata = {
-  title: "Faqs || MunAi - AI Writer & Copywriting Nextjs Template",
-  description: "MunAi - AI Writer & Copywriting Nextjs Template",
+  title: "FAQs | IntelliByld - Construction Supply Chain Intelligence",
+  description: "Frequently Asked Questions about IntelliByld, Agentic AI, Digital Twins, and BCA Site Management Data Standards for construction logistics.",
 };
+
 export default function page() {
+  const faqJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: faqs4.map((faq) => ({
+      "@type": "Question",
+      name: faq.title,
+      acceptedAnswer: {
+        "@type": "Answer",
+        text: faq.content,
+      },
+    })),
+  };
+
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+      />
       <div id="wrapper">
         <div id="page" className="faqs-page">
-          <Header1 />
+          <Header2 />
           <FlatTitle2 />
-          <Faq1 />
-          <Faq2 />
-          <Faq3 />
-          <Features2 />
-          <Cta />
 
-          <Footer1 />
+          <Faq3 />
+
+          <Footer2 />
         </div>
       </div>
-      <Mouse />
+
       <ScrollTop />
     </>
   );

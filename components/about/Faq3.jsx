@@ -27,13 +27,12 @@ export default function Faq3() {
           <div className="col-md-8">
             <div className="heading-section wow fadeInUp text-center">
               <div className="main-title">
-                Frequently Asked{" "}
-                <span className="animation-text">questions</span>
+                Know More about{" "}
+                <span className="animation-text">Intellibyld</span>
               </div>
               <div className="text">
-                Sed ut perspiciatis unde omnis iste natus sit voluptatem
-                accusantium doloremque <br />
-                totam rem aperiam eaque quae abillo inventore veritatis
+                IntelliByld helps construction teams orchestrate supply chain decisions with Agentic AI and Digital Twins.
+                It enables faster execution, lower risk, and full visibility across the project lifecycle.
               </div>
             </div>
             <div className="flat-accordion2">

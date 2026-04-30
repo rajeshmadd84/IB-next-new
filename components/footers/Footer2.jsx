@@ -23,11 +23,11 @@ export default function Footer2() {
               <Link href={`/`}>
                 <Image
                   id="logo_footer"
-                  src="/assets/images/logo/logo-white.svg"
+                  src="/assets/images/logo/logo.svg"
                   width={166}
                   alt="image"
                   height={40}
-                  data-retina="/assets/images/logo/logo-white.svg"
+                  data-retina="/assets/images/logo/logo.svg"
                 />
               </Link>
             </div>

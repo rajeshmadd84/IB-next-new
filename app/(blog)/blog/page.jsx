@@ -9,21 +9,21 @@ import Header1 from "@/components/headers/Header1";
 
 import React from "react";
 export const metadata = {
-  title: "Blog || MunAi - AI Writer & Copywriting Nextjs Template",
-  description: "MunAi - AI Writer & Copywriting Nextjs Template",
+  title: "IntelliByld - The OS for contruction supply chians.",
+  description: "IntelliByld uses Agentic AI and Digital Twins to transform construction logistics into autonomous, data-driven operations. Headquartered in Singapore.",
 };
 export default function page() {
   return (
     <>
       <div id="wrapper">
         <div id="page" className="">
-          <Header1 />
+          <Header2 />
           <FlatTitle />
           <Blog />
 
           <Cta />
 
-          <Footer1 />
+          <Footer2 />
         </div>
       </div>
       <Mouse />

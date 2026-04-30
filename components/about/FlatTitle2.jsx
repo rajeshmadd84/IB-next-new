@@ -11,14 +11,7 @@ export default function FlatTitle2() {
         <div className="row">
           <div className="col-12">
             <div className="heading">FAQs</div>
-            <ul className="breadcrumbs">
-              <li className="icon-arrow-right relative">
-                <Link href={`/`}>Home</Link>
-              </li>
-              <li className="active">
-                <a href="#">FAQs</a>
-              </li>
-            </ul>
+            <h2>What is Intellibyld?</h2>
           </div>
         </div>
       </div>

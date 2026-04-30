@@ -14,8 +14,8 @@ import React from "react";
 import Mouse from "@/components/common/Mouse";
 import ScrollTop from "@/components/common/ScrollTop";
 export const metadata = {
-  title: "Home 2 || MunAi - AI Writer & Copywriting Nextjs Template",
-  description: "MunAi - AI Writer & Copywriting Nextjs Template",
+  title: "IntelliByld - The OS for contruction supply chians.",
+  description: "IntelliByld uses Agentic AI and Digital Twins to transform construction logistics into autonomous, data-driven operations. Headquartered in Singapore.",
 };
 export default function page() {
   return (

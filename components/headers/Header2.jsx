@@ -19,9 +19,8 @@ export default function Header2() {
   return (
     <header
       id="header_main"
-      className={`header header-green header-fixed style-absolute  ${
-        scrollHeight > 70 ? "is-fixed" : ""
-      } ${scrollHeight > 100 ? "is-small" : ""}`}
+      className={`header header-green header-fixed style-absolute  ${scrollHeight > 70 ? "is-fixed" : ""
+        } ${scrollHeight > 100 ? "is-small" : ""}`}
     >
       <div className="themesflat-container w1420">
         <div className="row">
@@ -32,11 +31,11 @@ export default function Header2() {
                   <Link href={`/`} rel="home" className="main-logo">
                     <Image
                       id="logo_header"
-                      src="/assets/images/logo/logo-white.svg"
+                      src="/assets/images/logo/logo.svg"
                       width={166}
                       alt="image"
                       height={40}
-                      data-retina="/assets/images/logo/logo-green@2x.png"
+                      data-retina="/assets/images/logo/logo.svg"
                     />
                   </Link>
                 </div>
@@ -77,11 +76,11 @@ export default function Header2() {
           <Link href={`/`} rel="home" className="main-logo">
             <Image
               id="mobile-logo_header"
-              src="/assets/images/logo/logo-white.svg"
+              src="/assets/images/logo/logo.svg"
               width={166}
               height={40}
               alt="image"
-              data-retina="/assets/images/logo/logo-white@2x.png"
+              data-retina="/assets/images/logo/logo.svg"
             />
           </Link>
           <div

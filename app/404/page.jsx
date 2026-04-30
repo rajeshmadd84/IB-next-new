@@ -1,5 +1,5 @@
-import Footer1 from "@/components/footers/Footer1";
-import Header1 from "@/components/headers/Header1";
+import Footer2 from "@/components/footers/Footer2";
+import Header2 from "@/components/headers/Header2";
 import Cta from "@/components/homes/home-1/Cta";
 
 import Mouse from "@/components/common/Mouse";
@@ -15,7 +15,7 @@ export default function Home() {
     <>
       <div id="wrapper">
         <div id="page" className="">
-          <Header1 />
+          <Header2 />
           <>
             {/* flat-title-page */}
             <div className="flat-title-page">
@@ -49,16 +49,15 @@ export default function Home() {
                       <div className="heading-section wow fadeInUp">
                         <div className="main-title">
                           Sorry! <br />
-                          This Page Can’t <br />
-                          Be <span className="animation-text">Found</span>
+                          You’ve Wandered <br />
+                          <span className="animation-text">Off-Site.</span>
                         </div>
                       </div>
                       <p>
-                        Ut enim ad minima veniam, quis nostrum corporis suscipit
-                        laboriosam nisi ut aliquid exea
+                        It looks like you've bypassed the safety perimeter. This page hasn't been built yet, or someone moved the foundation while we weren't looking. Either way, you're standing in a vacant lot.
                       </p>
                       <Link href="/" className="tf-button">
-                        <span>Go To Home</span>
+                        <span>Back to the Trailer</span>
                         <i className="icon-arrow-right2" />
                       </Link>
                     </div>
@@ -77,8 +76,8 @@ export default function Home() {
             {/* /404-page */}
           </>
 
-          <Cta />
-          <Footer1 />
+
+          <Footer2 />
         </div>
       </div>
       <Mouse />

@@ -34,7 +34,7 @@ export default function Accordion({
     }
   }, [currentIndex]);
   return (
-    <>
+    <div itemScope itemType="https://schema.org/FAQPage">
       {faqData.map((elm, index) => (
         <div
           ref={(el) => (parentRefs.current[index] = el)}
@@ -44,10 +44,14 @@ export default function Accordion({
             setCurrentIndex((pre) => (pre == index ? -1 : index));
           }}
           style={{ cursor: "pointer" }}
+          itemScope
+          itemType="https://schema.org/Question"
+          itemProp="mainEntity"
         >
           <h4
             ref={(el) => (questionRefs.current[index] = el)}
             className="toggle-title active"
+            itemProp="name"
           >
             {elm.title}
           </h4>
@@ -55,11 +59,14 @@ export default function Accordion({
             ref={(el) => (answerRefs.current[index] = el)}
             className="toggle-content"
             style={{ display: "block" }}
+            itemScope
+            itemType="https://schema.org/Answer"
+            itemProp="acceptedAnswer"
           >
-            <p>{elm.content}</p>
+            <p itemProp="text">{elm.content}</p>
           </div>
         </div>
       ))}
-    </>
+    </div>
   );
 }

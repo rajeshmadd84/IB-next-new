@@ -11,6 +11,8 @@ import Partners from "@/components/homes/home-2/Partners";
 import Pricing from "@/components/homes/home-2/Pricing";
 import Team from "@/components/homes/home-2/Team";
 import Testimonials from "@/components/homes/home-2/Testimonials";
+import CoreDefinitions from "@/components/homes/home-2/CoreDefinitions";
+import HowItWorks from "@/components/homes/home-2/HowItWorks";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
 import { faqs } from "@/data/faq";
@@ -57,7 +59,12 @@ export default function page() {
       "@type": "Organization",
       name: "IntelliByld",
       url: "https://intellibyld.com",
-      sameAs: ["https://www.linkedin.com/company/intellibyld"],
+      sameAs: [
+        "https://www.linkedin.com/company/intellibyld",
+        "https://twitter.com/intellibyld",
+        "https://www.facebook.com/intellibyld",
+        "https://www.instagram.com/intellibyld"
+      ],
       address: {
         "@type": "PostalAddress",
         addressLocality: "Singapore",
@@ -90,6 +97,12 @@ export default function page() {
     image: "https://intellibyld.com/logo.png",
     "@id": "https://intellibyld.com",
     url: "https://intellibyld.com",
+    sameAs: [
+      "https://www.linkedin.com/company/intellibyld",
+      "https://twitter.com/intellibyld",
+      "https://www.facebook.com/intellibyld",
+      "https://www.instagram.com/intellibyld"
+    ],
     telephone: "+6590413331",
     address: {
       "@type": "PostalAddress",
@@ -105,9 +118,43 @@ export default function page() {
     },
   };
 
+  const howToSchema = {
+    "@context": "https://schema.org",
+    "@type": "HowTo",
+    name: "How IntelliByld Automates Construction Supply Chains",
+    description:
+      "A step-by-step guide to how IntelliByld uses Agentic AI and Digital Twins to autonomously orchestrate construction supply chain operations.",
+    step: [
+      {
+        "@type": "HowToStep",
+        position: 1,
+        name: "Connect Your Data Sources",
+        text: "IntelliByld integrates with your existing BIM models, ERP systems, and project management tools via API. Data flows automatically from day one via BIM, ERP, IoT, and supplier portal connectors.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 2,
+        name: "Build a Live Digital Twin",
+        text: "The platform constructs a real-time digital replica of your supply chain. Every material, shipment, and delivery milestone is mapped against your master project schedule automatically.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 3,
+        name: "AI Agents Identify and Resolve Risks",
+        text: "IntelliByld's Agentic AI continuously monitors for risks — supplier delays, transport disruptions, demand shifts — and acts autonomously to resolve them before they impact the site.",
+      },
+      {
+        "@type": "HowToStep",
+        position: 4,
+        name: "Execute and Stay Audit-Ready",
+        text: "Every action taken by the platform is logged with full traceability. BCA Level 3 Site Management Data Standards compliance documentation is generated automatically.",
+      },
+    ],
+  };
+
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [softwareSchema, faqSchema, localBusinessSchema],
+    "@graph": [softwareSchema, faqSchema, localBusinessSchema, howToSchema],
   };
 
   return (
@@ -125,6 +172,8 @@ export default function page() {
             <Features />
             <DigitalTwin />
             <AgenticAi />
+            <CoreDefinitions />
+            <HowItWorks />
             <Faq />
             <Team />
             <Footer2 />
