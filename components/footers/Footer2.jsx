@@ -38,6 +38,10 @@ export default function Footer2() {
               <a className="tf-color-green" href="#">
                 Intellibyld
               </a>{" "}
+              |{" "}
+              <Link className="tf-color-green" href="/glossary">
+                Glossary
+              </Link>{" "}
               All Rights Reserved
             </p>
           </div>

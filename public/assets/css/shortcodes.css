@@ -3460,12 +3460,12 @@ ul.list-item li .icon-tick::before {
 }
 
 /* Home-2 reusable Banner background (line + blobs) */
-.home2-banner-bg {
+.home-banner-bg {
   position: relative;
   background-image: url(../images/item-background/line.png);
 }
 
-.home2-banner-bg .bg-item .item-1 {
+.home-banner-bg .bg-item .item-1 {
   position: absolute;
   top: 0;
   right: 0;
@@ -3476,7 +3476,7 @@ ul.list-item li .icon-tick::before {
   filter: blur(150px);
 }
 
-.home2-banner-bg .bg-item .item-2 {
+.home-banner-bg .bg-item .item-2 {
   position: absolute;
   bottom: -352px;
   left: -487px;
@@ -4575,7 +4575,7 @@ ul.list-item li .icon-tick::before {
   border-color: #e6f85e;
 }
 
-.services-item.home2-digital-services-item:hover {
+.services-item.home-digital-services-item:hover {
   border-color: #2563EB;
 }
 

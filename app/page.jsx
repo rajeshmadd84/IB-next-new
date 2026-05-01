@@ -1,18 +1,16 @@
 import Footer2 from "@/components/footers/Footer2";
 import Header2 from "@/components/headers/Header2";
-import Banner from "@/components/homes/home-2/Banner";
-import Cta from "@/components/homes/home-2/Cta";
-import DigitalTwin from "@/components/homes/home-2/DigitalTwin";
-import AgenticAi from "@/components/homes/home-2/AgenticAi";
-import Features from "@/components/homes/home-2/Features";
-import EditorLanguages from "@/components/homes/home-2/EditorLanguages";
-import Faq from "@/components/homes/home-2/Faq";
-import Partners from "@/components/homes/home-2/Partners";
-import Pricing from "@/components/homes/home-2/Pricing";
-import Team from "@/components/homes/home-2/Team";
-import Testimonials from "@/components/homes/home-2/Testimonials";
-import CoreDefinitions from "@/components/homes/home-2/CoreDefinitions";
-import HowItWorks from "@/components/homes/home-2/HowItWorks";
+import Banner from "@/components/home/Banner";
+import Cta from "@/components/home/Cta";
+import DigitalTwin from "@/components/home/DigitalTwin";
+import AgenticAi from "@/components/home/AgenticAi";
+import Features from "@/components/home/Features";
+import EditorLanguages from "@/components/home/EditorLanguages";
+import Faq from "@/components/home/Faq";
+import Partners from "@/components/home/Partners";
+import Pricing from "@/components/home/Pricing";
+import Team from "@/components/home/Team";
+import Testimonials from "@/components/home/Testimonials";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
 import { faqs } from "@/data/faq";
@@ -42,44 +40,82 @@ export default function page() {
   const softwareSchema = {
     "@context": "https://schema.org",
     "@type": "SoftwareApplication",
+    "@id": "https://intellibyld.com/#software",
+    url: "https://intellibyld.com",
     name: "IntelliByld",
-    applicationCategory: "Site Management Platform (SMP)",
+    applicationCategory: "ConstructionTechnologySoftware",
+    "applicationSubCategory": [
+      "Agentic AI",
+      "Digital Twin",
+      "Construction Logistics",
+      "Supply Chain Management",
+      "Autonomous Procurement",
+      "Embodied Carbon Tracking"
+    ],
     operatingSystem: "Web-based / Cloud",
     keywords:
-      "Integrated Digital Delivery (IDD), BEITM, SGBuildex API, BCA Site Management Data Standards, ISO 19650",
+      "construction supply chain AI, agentic AI construction, digital twin construction, autonomous procurement, BCA compliance, Singapore IDD, RFQ automation, Agentic AI, Digital Twin, Supply chain automation, Construction logistics",
     description:
-      "IntelliByld is a Singapore-based SMP providing Level 3 Fully Digital Audit readiness through Agentic AI and automated compliance with BCA Site Management Data Standards.",
+      "IntelliByld is the OS for autonomous construction supply chains. It uses a Construction-Trained SLM, Agentic AI agents, and Real-Time Digital Twins to coordinate procurement, shipping, and bid evaluation — autonomously.",
     featureList: [
-      "Autonomous logistics rescheduling",
-      "Predictive supply chain risk mitigation",
-      "BIM-integrated digital twin simulation",
-      "Automated BCA Level 3 audit documentation",
+      "Construction-Trained Small Language Model (SLM)",
+      "Real-Time Digital Twin of construction supply chain",
+      "Agentic AI for autonomous RFQ generation",
+      "Autonomous shipment re-routing",
+      "BCA Level 3 Site Management Data Standards compliance",
+      "Singapore IDD (Integrated Digital Delivery) framework alignment",
+      "BIM integration (IFC, Revit, Navisworks)",
+      "ERP connectors (SAP, Oracle, Procore)",
+      "Embodied carbon tracking per delivery"
     ],
+    offers: {
+      "@type": "Offer",
+      price: "0",
+      description: "Free pilot available",
+      url: "https://intellibyld.com/pilot"
+    },
+    "creator": {                                          // ✅ Fixed: author → creator
+      "@type": "Organization",
+      "@id": "https://intellibyld.com/#org",
+      name: "IntelliByld",
+      url: "https://intellibyld.com",
+      founder: [                                        // ✅ Fixed: founders → founder
+        { "@type": "Person", name: "Rajesh Maddineni", jobTitle: "CEO & Co-Founder" },
+        { "@type": "Person", name: "Thaun S Kalimili", jobTitle: "CTO & Co-Founder" },
+        { "@type": "Person", name: "Hari Sagaran", jobTitle: "CGO & Co-Founder" },
+        { "@type": "Person", name: "Jidesh Kambil", jobTitle: "CBDO & Founding Advisor" }
+      ],
+      foundingDate: "2026",
+      sameAs: ["https://www.linkedin.com/company/intellibyld"],
+      address: {
+        "@type": "PostalAddress",
+        "streetAddress": "21 Pandan Avenue #04-A Senkee Logistics Hub,",
+        "addressLocality": "Singapore",
+        "postalCode": "609388",
+        "addressCountry": "SG",
+      },
+    },
     author: {
       "@type": "Organization",
       name: "IntelliByld",
       url: "https://intellibyld.com",
-      sameAs: [
-        "https://www.linkedin.com/company/intellibyld",
-        "https://twitter.com/intellibyld",
-        "https://www.facebook.com/intellibyld",
-        "https://www.instagram.com/intellibyld"
-      ],
+      sameAs: ["https://www.linkedin.com/company/intellibyld"],
       address: {
         "@type": "PostalAddress",
+        streetAddress: "21 Pandan Avenue #04-A Senkee Logistics Hub,",
         addressLocality: "Singapore",
+        postalCode: "609388",
         addressCountry: "SG",
       },
+      "foundingDate": "2024",
+
     },
   };
 
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    publisher: {
-      "@type": "Organization",
-      name: "IntelliByld",
-    },
+
     mainEntity: faqs.map((faq) => ({
       "@type": "Question",
       name: faq.title,
@@ -92,17 +128,18 @@ export default function page() {
 
   const localBusinessSchema = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
+    "@type": "Organization",
+    "@id": "https://intellibyld.com/#org",
     name: "IntelliByld",
-    image: "https://intellibyld.com/logo.png",
-    "@id": "https://intellibyld.com",
-    url: "https://intellibyld.com",
-    sameAs: [
-      "https://www.linkedin.com/company/intellibyld",
-      "https://twitter.com/intellibyld",
-      "https://www.facebook.com/intellibyld",
-      "https://www.instagram.com/intellibyld"
+    knowsAbout: [
+      "Agentic AI", "Construction Supply Chain",
+      "Digital Twins", "BCA compliance", "Singapore IDD"
     ],
+    image: "https://intellibyld.com/logo.svg",
+    "sameAs": [
+      "https://www.linkedin.com/company/intellibyld"
+    ],
+    "url": "https://intellibyld.com",
     telephone: "+6590413331",
     address: {
       "@type": "PostalAddress",
@@ -116,45 +153,14 @@ export default function page() {
       latitude: 1.29027,
       longitude: 103.851959,
     },
-  };
-
-  const howToSchema = {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    name: "How IntelliByld Automates Construction Supply Chains",
-    description:
-      "A step-by-step guide to how IntelliByld uses Agentic AI and Digital Twins to autonomously orchestrate construction supply chain operations.",
-    step: [
-      {
-        "@type": "HowToStep",
-        position: 1,
-        name: "Connect Your Data Sources",
-        text: "IntelliByld integrates with your existing BIM models, ERP systems, and project management tools via API. Data flows automatically from day one via BIM, ERP, IoT, and supplier portal connectors.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 2,
-        name: "Build a Live Digital Twin",
-        text: "The platform constructs a real-time digital replica of your supply chain. Every material, shipment, and delivery milestone is mapped against your master project schedule automatically.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 3,
-        name: "AI Agents Identify and Resolve Risks",
-        text: "IntelliByld's Agentic AI continuously monitors for risks — supplier delays, transport disruptions, demand shifts — and acts autonomously to resolve them before they impact the site.",
-      },
-      {
-        "@type": "HowToStep",
-        position: 4,
-        name: "Execute and Stay Audit-Ready",
-        text: "Every action taken by the platform is logged with full traceability. BCA Level 3 Site Management Data Standards compliance documentation is generated automatically.",
-      },
-    ],
+    "description": "IntelliByld builds the operating system for autonomous construction supply chains using Agentic AI and Digital Twins.",
+    "areaServed": ["Singapore", "Global"],
+    "industry": "Construction Technology"
   };
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [softwareSchema, faqSchema, localBusinessSchema, howToSchema],
+    "@graph": [softwareSchema, faqSchema, localBusinessSchema],
   };
 
   return (
@@ -166,18 +172,17 @@ export default function page() {
       />
       <div className="page-green">
         <div id="wrapper">
-          <div id="page" className="home2">
+          <div id="page" className="home">
             <Header2 />
             <Banner />
             <Features />
             <DigitalTwin />
             <AgenticAi />
-            <CoreDefinitions />
-            <HowItWorks />
-            <Faq />
             <Team />
+            <Faq />
+
             <Footer2 />
-            
+
 
 
           </div>

@@ -22,7 +22,7 @@ export default function page() {
     <>
       <div className="page-green">
         <div id="wrapper">
-          <div id="page" className="home2">
+          <div id="page" className="home">
             <Header2 />
             <Banner />
             <Features />
