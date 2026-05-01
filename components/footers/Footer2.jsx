@@ -35,14 +35,10 @@ export default function Footer2() {
           <div className="col-sm-4 col-lg-4 text-start text-sm-center">
             <p className="text mb-0">
               Copyright @{new Date().getFullYear()},{" "}
-              <a className="tf-color-green" href="#">
-                Intellibyld
-              </a>{" "}
-              |{" "}
-              <Link className="tf-color-green" href="/glossary">
-                Glossary
-              </Link>{" "}
-              All Rights Reserved
+
+              Intellibyld | All Rights Reserved
+
+
             </p>
           </div>
           <div className="col-sm-4 col-lg-4 text-start text-sm-end">

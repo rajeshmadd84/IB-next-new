@@ -13,7 +13,7 @@ export default function Banner() {
           <div className="col-xl-6 col-12">
             <div className="content">
               <div className="title">
-                The OS for <br /> Construciton <br />
+                The OS for <br /> Construction <br />
                 {" "}
                 <span className="tf-color-green">Supply Chains</span>
               </div>
@@ -26,9 +26,9 @@ export default function Banner() {
                   <span>Request Free Demo</span>
                   <i className="icon-arrow-right2" />
                 </a>
-               
+
               </div>
-              
+
             </div>
           </div>
           <div className="col-xl-6 col-12">
@@ -42,7 +42,7 @@ export default function Banner() {
                 height={549}
                 className="item-1"
               />
-              
+
             </div>
           </div>
         </div>
