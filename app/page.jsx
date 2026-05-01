@@ -14,11 +14,16 @@ import Testimonials from "@/components/home/Testimonials";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
 import { faqs } from "@/data/faq";
+
+export const revalidate = 86400;
 // 1. Technical SEO: Metadata for Search Engines
 export const metadata = {
   title: 'IntelliByld | The OS for Autonomous Construction Supply Chains',
   description: 'IntelliByld uses Agentic AI and Digital Twins to transform construction logistics into autonomous, data-driven operations. Headquartered in Singapore.',
   keywords: ['Construction Supply Chain', 'Agentic AI', 'BIM Integration', 'Singapore BCA IDD', 'Autonomous Logistics'],
+  alternates: {
+    canonical: "https://www.intellibyld.com/",
+  },
   openGraph: {
     title: 'IntelliByld - Construction Supply Chain Intelligence',
     description: 'Transforming fragmented construction data into real-time execution insights.',
@@ -36,6 +41,8 @@ export const metadata = {
   },
 };
 export default function page() {
+
+  const stripHtml = (html) => html.replace(/<[^>]*>/g, "");
   // 2. AEO Strategy: JSON-LD for AI Answer Engines
   const softwareSchema = {
     "@context": "https://schema.org",
@@ -72,7 +79,9 @@ export default function page() {
       "@type": "Offer",
       price: "0",
       description: "Free pilot available",
-      url: "https://intellibyld.com/pilot"
+      url: "https://intellibyld.com/pilot",
+      priceCurrency: "SGD",
+      priceValidUntil: "2026-12-31"
     },
     "creator": {                                          // ✅ Fixed: author → creator
       "@type": "Organization",
@@ -107,7 +116,7 @@ export default function page() {
         postalCode: "609388",
         addressCountry: "SG",
       },
-      "foundingDate": "2024",
+
 
     },
   };
@@ -121,7 +130,7 @@ export default function page() {
       name: faq.title,
       acceptedAnswer: {
         "@type": "Answer",
-        text: faq.content,
+        text: stripHtml(faq.content),
       },
     })),
   };
@@ -131,11 +140,12 @@ export default function page() {
     "@type": "Organization",
     "@id": "https://intellibyld.com/#org",
     name: "IntelliByld",
+    foundingDate: "2026",
     knowsAbout: [
       "Agentic AI", "Construction Supply Chain",
       "Digital Twins", "BCA compliance", "Singapore IDD"
     ],
-    image: "https://intellibyld.com/logo.svg",
+    image: "https://www.intellibyld.com/assets/images/logo/logo.svg",
     "sameAs": [
       "https://www.linkedin.com/company/intellibyld"
     ],
