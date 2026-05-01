@@ -7,29 +7,33 @@ import Faq3 from "@/components/about/Faq3";
 import { faqs4 } from "@/data/faq";
 
 export const metadata = {
-  title: "FAQs | IntelliByld - Construction Supply Chain Intelligence",
-  description: "Frequently Asked Questions about IntelliByld, Agentic AI, Digital Twins, and BCA Site Management Data Standards for construction logistics.",
-};
+  title: 'IntelliByld FAQs — Construction Supply Chain AI Questions Answered',
+  description: 'Answers to common questions about IntelliByld — Agentic AI, Digital Twins, BCA compliance, Singapore IDD, and autonomous construction supply chain management.',
+  alternates: {
+    canonical: 'https://www.intellibyld.com/faqs',
+  },
+}
 
-export default function page() {
-  const faqJsonLd = {
+export default function FAQsPage() {
+
+  const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: faqs4.map((faq) => ({
+    "mainEntity": faqs4.map((faq) => ({
       "@type": "Question",
-      name: faq.title,
-      acceptedAnswer: {
+      "name": faq.title,
+      "acceptedAnswer": {
         "@type": "Answer",
-        text: faq.content,
+        "text": faq.content,
       },
     })),
-  };
+  }
 
   return (
     <>
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqJsonLd) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
       <div id="wrapper">
         <div id="page" className="faqs-page">
