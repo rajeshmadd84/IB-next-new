@@ -15,7 +15,7 @@ export default function Features() {
                   <br />
                   Of Your Entire
                   <br />
-                  <span className="tf-color-green">Supply Chain</span>
+                  <span className="ib-color-blue">Supply Chain</span>
                 </div>
               </div>
               <p className="">

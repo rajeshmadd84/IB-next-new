@@ -37,11 +37,11 @@ export default function EditorLanguages() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section wow fadeInUp style-1 text-center">
-              <h6 className="tf-color-green">Editors &amp; Languages</h6>
+              <h6 className="ib-color-blue">Editors &amp; Languages</h6>
               <div className="main-title">
                 We've 70+ of your favorite languages <br />
                 And then integrated them with{" "}
-                <span className="animation-text tf-color-green">
+                <span className="animation-text ib-color-blue">
                   40+ editors.
                 </span>
               </div>
@@ -98,10 +98,10 @@ export default function EditorLanguages() {
             <div className="col-lg-6">
               <div className="content">
                 <div className="heading-section wow fadeInUp style-1">
-                  <h6 className="tf-color-green">Generation</h6>
+                  <h6 className="ib-color-blue">Generation</h6>
                   <div className="main-title">
                     Heigh Power AI-Coding <br /> Tools{" "}
-                    <span className="animation-text tf-color-green">
+                    <span className="animation-text ib-color-blue">
                       Generation
                     </span>
                   </div>

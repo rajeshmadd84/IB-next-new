@@ -124,7 +124,7 @@ export const useCases = [
   {
     id: 1,
     icon: "icon-users",
-    title: "Manage Your Account",
+    title: "Supplier Delay Neutralisation",
   },
   {
     id: 2,

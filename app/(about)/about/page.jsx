@@ -7,7 +7,7 @@ import Testimonials from "@/components/about/Testimonials";
 import Tools from "@/components/about/Tools";
 import VideoSection from "@/components/about/VideoSection";
 
-import Footer2 from "@/components/footers/Footer2";
+import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
@@ -77,9 +77,9 @@ export default function page() {
           <Partners />
           <VideoSection />
           <Testimonials />
-          <Cta />
 
-          <Footer2 />
+
+          <Footer1 />
         </div>
       </div>
 

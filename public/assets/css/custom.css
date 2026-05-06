@@ -89,3 +89,394 @@ a {
 .shop-apply-btn:hover {
   background-color: #6844ed !important;
 }
+
+@media (min-width: 992px) {
+  .col-lg-30 {
+    flex: 0 0 30% !important;
+    max-width: 30% !important;
+  }
+  .col-lg-70 {
+    flex: 0 0 70% !important;
+    max-width: 70% !important;
+  }
+  .col-lg-60 {
+    flex: 0 0 60% !important;
+    max-width: 60% !important;
+  }
+  .col-lg-40 {
+    flex: 0 0 40% !important;
+    max-width: 40% !important;
+  }
+}
+
+/* wg-steps-stack — scroll-stack layout (image left, sticky cards right) */
+.wg-steps-stack .stack-wrap {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 60px;
+  margin-top: 60px;
+}
+
+.wg-steps-stack .stack-image {
+  height: 100%;
+}
+
+.wg-steps-stack .stack-image-inner {
+  position: sticky;
+  top: 100px;
+  border-radius: 25px;
+  border: 1px solid rgba(104, 68, 237, 0.15);
+  background: #ebebfd;
+  padding: 29px 39px;
+}
+
+.wg-steps-stack .stack-image-inner img {
+  width: 100%;
+  height: auto;
+  border-radius: 13px;
+  display: block;
+}
+
+.wg-steps-stack .stack-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.wg-steps-stack .stack-card {
+  position: sticky;
+  background: #fff;
+  border: 1px solid rgba(104, 68, 237, 0.15);
+  border-radius: 20px;
+  padding: 40px 44px;
+  box-shadow: 0px 30px 60px rgba(104, 68, 237, 0.08);
+  transition: box-shadow 0.3s ease;
+}
+
+.wg-steps-stack .stack-card:hover {
+  box-shadow: 0px 30px 60px rgba(104, 68, 237, 0.16);
+}
+
+.wg-steps-stack .stack-card .number {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  background-color: #6844ed;
+  box-shadow: 0px 20px 40px rgba(104, 68, 237, 0.2);
+  margin-bottom: 21px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #fff;
+}
+
+.wg-steps-stack .stack-card .title {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+  letter-spacing: -0.9px;
+  margin-bottom: 14px;
+}
+
+.wg-steps-stack .stack-card .title a {
+  color: #2563eb;
+}
+
+.wg-steps-stack .stack-card .title a:hover {
+  color: #2563eb;
+}
+
+.wg-steps-stack .stack-card p {
+  margin: 0;
+  color: #5a5874;
+}
+
+.wg-steps-stack .stack-card ul {
+  list-style: none;
+  margin: 0;
+  padding-left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.wg-steps-stack .stack-card ul li {
+  position: relative;
+  padding-left: 28px;
+  color: #5a5874;
+  font-size: 18px;
+  line-height: 1.55;
+}
+
+.wg-steps-stack .stack-card ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 6px;
+  width: 18px;
+  height: 18px;
+  background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%232563eb' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'><polyline points='20 6 9 17 4 12'/></svg>");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+/* multi-site Features2 — wider gap between text + image columns */
+.wg-create-design.style-7 .col-lg-60 {
+  padding-right: 40px;
+}
+
+.wg-create-design.style-7 .col-lg-40 {
+  padding-left: 40px;
+}
+
+@media (max-width: 991px) {
+  .wg-create-design.style-7 .col-lg-60,
+  .wg-create-design.style-7 .col-lg-40 {
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+}
+
+/* wg-comparison — three-column comparison table */
+.wg-comparison .comparison-table-wrap {
+  margin-top: 60px;
+  overflow-x: auto;
+  border-radius: 16px;
+  border: 10px solid rgba(104, 68, 237, 0.12);
+  background: #fff;
+}
+
+.wg-comparison .comparison-table {
+  width: 100%;
+  border: 0;
+  border-collapse: collapse;
+  table-layout: fixed;
+  margin: 0;
+}
+
+.wg-comparison .comparison-table th,
+.wg-comparison .comparison-table td {
+  padding: 22px 28px;
+  text-align: left;
+  vertical-align: middle;
+  font-size: 17px;
+  line-height: 1.5;
+  border: 0;
+  border-bottom: 1px solid rgba(104, 68, 237, 0.12);
+}
+
+.wg-comparison .comparison-table thead th {
+  font-size: 18px;
+  font-weight: 700;
+  color: #030014;
+  background: #faf9ff;
+}
+
+.wg-comparison .comparison-table thead th.highlight {
+  color: #2563eb;
+}
+
+.wg-comparison .comparison-table tbody th {
+  font-weight: 700;
+  color: #2563eb;
+  width: 30%;
+}
+
+.wg-comparison .comparison-table tbody td {
+  color: #5a5874;
+}
+
+.wg-comparison .comparison-table tbody td.highlight {
+  color: #030014;
+  font-weight: 600;
+  background: rgba(104, 68, 237, 0.04);
+}
+
+.wg-comparison .comparison-table tbody tr:last-child th,
+.wg-comparison .comparison-table tbody tr:last-child td {
+  border-bottom: 0;
+}
+
+@media (max-width: 767px) {
+  .wg-comparison .comparison-table th,
+  .wg-comparison .comparison-table td {
+    padding: 16px 18px;
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 991px) {
+  .wg-steps-stack .stack-wrap {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+
+  .wg-steps-stack .stack-image {
+    position: relative;
+    top: auto;
+  }
+
+  .wg-steps-stack .stack-card {
+    position: relative;
+    top: auto !important;
+    padding: 32px;
+  }
+
+  .wg-steps-stack .stack-card .title {
+    font-size: 24px;
+    line-height: 32px;
+  }
+}
+
+/* wg-works-with — three-card "Works with these agents" row */
+.wg-works-with .works-with-row {
+  row-gap: 24px;
+}
+
+.wg-works-with .works-with-card {
+  height: 100%;
+  background: #fff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 16px;
+  padding: 32px 32px 28px;
+  display: flex;
+  flex-direction: column;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.wg-works-with .works-with-card:hover {
+  border-color: rgba(37, 99, 235, 0.4);
+  box-shadow: 0 30px 60px rgba(37, 99, 235, 0.1);
+  transform: translateY(-4px);
+}
+
+.wg-works-with .works-with-title {
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.4px;
+  color: #2563eb;
+  margin: 0 0 14px;
+}
+
+.wg-works-with .works-with-body {
+  font-size: 16px;
+  line-height: 1.65;
+  color: #5a5874;
+  margin: 0 0 22px;
+  flex: 1;
+}
+
+.wg-works-with .works-with-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  color: #2563eb;
+}
+
+.wg-works-with .works-with-link:hover {
+  color: #030014;
+}
+
+.wg-works-with .works-with-link i {
+  transition: transform 0.3s ease;
+}
+
+.wg-works-with .works-with-link:hover i {
+  transform: translateX(4px);
+}
+
+@media (max-width: 767px) {
+  .wg-works-with .works-with-card {
+    padding: 26px 24px 22px;
+  }
+}
+
+/* wg-use-case — two-column heading + body cards */
+.wg-use-case .use-case-row {
+  row-gap: 32px;
+}
+
+.wg-use-case .use-case-item {
+  background: #fff;
+  border: 1px solid rgba(37, 99, 235, 0.12);
+  border-radius: 16px;
+  padding: 36px 40px;
+  height: 100%;
+}
+
+.wg-use-case .use-case-title {
+  font-size: 28px;
+  font-weight: 700;
+  line-height: 1.3;
+  letter-spacing: -0.6px;
+  color: #2563eb;
+  margin: 0 0 18px;
+}
+
+.wg-use-case .use-case-body {
+  font-size: 17px;
+  line-height: 1.65;
+  color: #5a5874;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .wg-use-case .use-case-item {
+    padding: 28px 24px;
+  }
+
+  .wg-use-case .use-case-title {
+    font-size: 24px;
+  }
+}
+
+/* definition-callout — quick-answer / "What it is" block */
+.definition-callout {
+  background: #f8f9fb;
+  border-left: 4px solid #2563eb;
+  padding: 24px 28px;
+  margin: 28px 0 32px;
+  border-radius: 4px;
+}
+
+.definition-callout p {
+  font-size: 17px;
+  line-height: 1.7;
+  color: #1f2937;
+  margin: 0;
+  font-weight: 400;
+}
+
+.definition-callout::before {
+  content: "What it is";
+  display: block;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: #2563eb;
+  margin-bottom: 10px;
+}
+
+@media (prefers-color-scheme: dark) {
+  .definition-callout {
+    background: rgba(37, 99, 235, 0.08);
+    border-left-color: #60a5fa;
+  }
+
+  .definition-callout p {
+    color: #e5e7eb;
+  }
+
+  .definition-callout::before {
+    color: #60a5fa;
+  }
+}
+

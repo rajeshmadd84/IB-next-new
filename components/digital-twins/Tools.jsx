@@ -12,7 +12,7 @@ export default function Tools() {
               <div className="main-title">
                 Why Choose Intellibyld
                 <br />
-                <span className="tf-color-green">Digital Twins</span>
+                <span className="ib-color-blue">Digital Twins</span>
               </div>
             </div>
           </div>

@@ -15,7 +15,7 @@ export default function Banner() {
               <div className="title">
                 The OS for <br /> Construction <br />
                 {" "}
-                <span className="tf-color-green">Supply Chains</span>
+                <span className="ib-color-blue">Supply Chains</span>
               </div>
               <p>
                 <strong>Intellibyld is the OS for construction supply chains</strong> that orchestrates fragmented logistics into Autonomous Execution.

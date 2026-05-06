@@ -55,7 +55,7 @@ export default function Testimonials() {
                     <div className="content">
                       <p>{testimonial.content}</p>
                       <div className="infor">
-                        <a href="#" className="tf-color-green">
+                        <a href="#" className="ib-color-blue">
                           {testimonial.name} /
                         </a>{" "}
                         {testimonial.position}

@@ -17,7 +17,7 @@ export default function Team() {
               <div className="main-title" style={{ color: "#fff" }}>
                 Meet our core 
                 {" "}
-                <span className="animation-text tf-color-green">Team</span>
+                <span className="animation-text ib-color-blue">Team</span>
               </div>
               <p style={{ color: "#fff", fontSize: "18px", lineHeight: "30px", marginTop: 18, marginBottom: 0 }}>
                 We build IntelliByld’s digital workforce: Agentic AI and living Digital Twins that turn construction supply chain data into execution.
@@ -49,7 +49,7 @@ export default function Team() {
                     <div style={{ marginTop: "24px" }}>
                       <a
                         href={linkedInSocial.url || "#"}
-                        className={`${linkedInSocial.icon} tf-color-green`}
+                        className={`${linkedInSocial.icon} ib-color-blue`}
                         aria-label={`${member.name} LinkedIn`}
                         target="_blank"
                         rel="noopener noreferrer"

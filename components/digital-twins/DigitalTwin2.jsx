@@ -43,7 +43,7 @@ export default function DigitalTwin2() {
                 <h6 style={{ color: "red" }}>What IntelliByld's Digital Twin Actually Is</h6>
                 <div className="main-title" style={{ color: "#000" }}>
                   
-                  <span className="animation-text tf-color-green">
+                  <span className="animation-text ib-color-blue">
                     Every material. Every supplier. Every shipment. Live.
                   </span>
                 </div>

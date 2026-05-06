@@ -1,16 +1,15 @@
 export const menuItems = [
-  "Features",
-  "Integrations",
-  "Pricing",
-  "Changelog",
-  "Roadmap",
+  "Agentic AI",
+  "Digital Twins",
+  "Sustainability",
+  "Contact Us",
 ];
 
 export const menuItems2 = [
-  "About Us",
-  "Community",
-  "Careers",
-  "Affiliate Program",
+  "Supplier Delay Neutralization",
+  "Multi-Site Supply Chain Coordination",
+  "Embodied Carbon Management",
+  
 ];
 export const menuItems3 = [
   "Download Ai",

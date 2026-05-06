@@ -10,10 +10,10 @@ export default function AgenticAi() {
           <div className="col-lg-6">
             <div className="content">
               <div className="heading-section wow fadeInUp style-1">
-                <h6 className="tf-color-green">Autonomous Execution Layer</h6>
+                <h6 className="ib-color-blue">Autonomous Execution Layer</h6>
                 <div className="main-title" style={{ color: "#000" }}>
                   Beyond Tracking:{" "}<br />
-                  <span className="animation-text tf-color-green">
+                  <span className="animation-text ib-color-blue">
                     Meet Your Digital Workforce
                   </span>
                 </div>
@@ -33,7 +33,7 @@ export default function AgenticAi() {
                     style={{ color: "#fff", marginTop: 6, flexShrink: 0 }}
                   />
                   <span style={{ display: "block" }}>
-                    <span className="tf-color-green" style={{ fontWeight: 700 }}>
+                    <span className="ib-color-blue" style={{ fontWeight: 700 }}>
                       Autonomous Logistics:
                     </span>{" "}
                     Freeing teams for site execution.
@@ -45,7 +45,7 @@ export default function AgenticAi() {
                     style={{ color: "#fff", marginTop: 6, flexShrink: 0 }}
                   />
                   <span style={{ display: "block" }}>
-                    <span className="tf-color-green" style={{ fontWeight: 700 }}>
+                    <span className="ib-color-blue" style={{ fontWeight: 700 }}>
                       Proactive Neutralization:
                     </span>{" "}
                     Stopping threats early.
@@ -57,7 +57,7 @@ export default function AgenticAi() {
                     style={{ color: "#fff", marginTop: 6, flexShrink: 0 }}
                   />
                   <span style={{ display: "block" }}>
-                    <span className="tf-color-green" style={{ fontWeight: 700 }}>
+                    <span className="ib-color-blue" style={{ fontWeight: 700 }}>
                       Zero Friction:
                     </span>{" "}
                     Fast-tracking RFQs and shipments.

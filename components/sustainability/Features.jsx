@@ -16,7 +16,7 @@ export default function Features() {
                   <br />
                   AI-Powered Carbon
                   <br />
-                  <span className="tf-color-green">Intelligence</span>
+                  <span className="ib-color-blue">Intelligence</span>
                 </div>
               </div>
               <p className="">

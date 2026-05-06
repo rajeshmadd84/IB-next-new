@@ -14,7 +14,7 @@ export default function Doing() {
             <div className="heading-section wow fadeInUp style-1 text-center">
               <h6 style={{ color: "#fff" }}>What is Intellibyld?</h6>
               <div className="main-title">
-                <span className="tf-color-green">Autonomous Execution </span> &nbsp;
+                <span className="ib-color-blue">Autonomous Execution </span> &nbsp;
                 <br /> for Construction Supply Chains. <br />
                 
                 

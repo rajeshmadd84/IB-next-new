@@ -10,14 +10,14 @@ export default function Sustainability1() {
           <div className="col-lg-6">
             <div className="content">
               <div className="heading-section wow fadeInUp style-1">
-                <h6 className="tf-color-green">What is the impact?</h6>
+                <h6 className="ib-color-blue">What is the impact?</h6>
                 <div
                   className="main-title sustainability-title-mobile-tight"
                   style={{ color: "#000", fontSize: "36px", lineHeight: "52px" }}
                 >
                 Not a green estimate. Not a generic report.{" "}<br />
                   <span
-                    className="animation-text tf-color-green sustainability-title-sub-mobile-tight"
+                    className="animation-text ib-color-blue sustainability-title-sub-mobile-tight"
                     style={{ fontSize: "28px", lineHeight: "40px" }}
                   >
                     A real-time ledger of your project’s environmental footprint.

@@ -35,7 +35,7 @@ export default function Pricing() {
             <div className="heading-section wow fadeInUp style-1 text-center">
               <div className="main-title">
                 Pricing Package{" "}
-                <span className="animation-text tf-color-green">MunAi</span>
+                <span className="animation-text ib-color-blue">MunAi</span>
               </div>
               <div className="text">
                 Sed ut perspiciatis unde omnis iste natus sit voluptatem

@@ -16,10 +16,10 @@ export default function DigitalTwin() {
           <div className="col-lg-5">
             <div className="content">
               <div className="heading-section wow fadeInUp style-1">
-                <h6 className="tf-color-green">Digital Twins</h6>
+                <h6 className="ib-color-blue">Digital Twins</h6>
                 <div className="main-title">
                   A Living Digital Twin of your entire project{" "}
-                  <span className="tf-color-green">Supply Chain</span>
+                  <span className="ib-color-blue">Supply Chain</span>
                 </div>
               </div>
               <p style={{ color: "#fff" }}>

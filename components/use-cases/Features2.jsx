@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-export default function Features2({ useCaseItem }) {
+export default function Features2() {
   return (
     <div className="wg-create-design style-7 pb-130 pt-130">
       <div className="themesflat-container">
@@ -8,7 +8,7 @@ export default function Features2({ useCaseItem }) {
           <div className="col-lg-6">
             <div className="content">
               <div className="heading-section wow fadeInUp">
-                <h6>{useCaseItem.title}</h6>
+                <h6>Hello</h6>
                 <div className="main-title">
                   Generate High-Quality <br />
                   Posts in just Minutes

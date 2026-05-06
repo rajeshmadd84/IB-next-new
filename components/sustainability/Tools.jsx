@@ -13,7 +13,7 @@ export default function Tools() {
               <div className="main-title">
                 Build Greener With
                 <br />
-                <span className="tf-color-green">Carbon Intelligence</span>
+                <span className="ib-color-blue">Carbon Intelligence</span>
               </div>
             </div>
           </div>

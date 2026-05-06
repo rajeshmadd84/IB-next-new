@@ -50,9 +50,9 @@ export default function CoreDefinitions() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section wow fadeInUp style-1 text-center" style={{ marginBottom: 48 }}>
-              <h6 className="tf-color-green">Key Concepts</h6>
+              <h6 className="ib-color-blue">Key Concepts</h6>
               <div className="main-title">
-                What Does <span className="tf-color-green">IntelliByld</span> Mean?
+                What Does <span className="ib-color-blue">IntelliByld</span> Mean?
               </div>
               <p style={{ color: "#b0b8c1", marginTop: 16, maxWidth: 680, marginLeft: "auto", marginRight: "auto" }}>
                 Precise definitions of the technology and frameworks that power IntelliByld's platform — written for clarity, not marketing.

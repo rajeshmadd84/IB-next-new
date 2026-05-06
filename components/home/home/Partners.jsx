@@ -24,7 +24,7 @@ export default function Partners() {
           <div className="col-12">
             <div className="partners-inner-1">
               <p>
-                We’ve more than <span className="tf-color-green">1563+</span>{" "}
+                We’ve more than <span className="ib-color-blue">1563+</span>{" "}
                 Global Clients
               </p>
               <div className="wrap">

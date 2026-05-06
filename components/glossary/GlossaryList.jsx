@@ -18,10 +18,10 @@ export default function GlossaryList() {
         <div className="row">
           <div className="col-md-5">
             <div className="heading-section wow fadeInUp style-1">
-              <h6 className="tf-color-green">Glossary</h6>
+              <h6 className="ib-color-blue">Glossary</h6>
               <div className="main-title">
                 Understand the {" "}
-                <span className="animation-text tf-color-green">Terminology</span>
+                <span className="animation-text ib-color-blue">Terminology</span>
               </div>
             </div>
             <p className="text">

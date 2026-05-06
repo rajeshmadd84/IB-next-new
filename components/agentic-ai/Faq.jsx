@@ -11,7 +11,7 @@ export default function Faq() {
               <h6 className="">FAQs</h6>
               <div className="main-title">
                 Frequently Asked{" "}
-                <span className="tf-color-green">Questions</span>
+                <span className="ib-color-blue">Questions</span>
               </div>
             </div>
             <p className="text">

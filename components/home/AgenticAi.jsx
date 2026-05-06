@@ -14,10 +14,10 @@ export default function AgenticAi() {
           <div className="col-lg-6">
             <div className="content">
               <div className="heading-section wow fadeInUp style-1">
-                <h6 className="tf-color-green">Autonomous Execution Layer</h6>
+                <h6 className="ib-color-blue">Autonomous Execution Layer</h6>
                 <div className="main-title">
                   Agents that don’t just track-{" "}
-                  <span className="animation-text tf-color-green">
+                  <span className="animation-text ib-color-blue">
                     They Execute
                   </span>
                 </div>

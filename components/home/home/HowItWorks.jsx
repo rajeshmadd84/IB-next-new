@@ -76,10 +76,10 @@ export default function HowItWorks() {
               className="heading-section wow fadeInUp style-1 text-center"
               style={{ marginBottom: 56 }}
             >
-              <h6 className="tf-color-green">How It Works</h6>
+              <h6 className="ib-color-blue">How It Works</h6>
               <div className="main-title">
                 From Data to{" "}
-                <span className="animation-text tf-color-green">
+                <span className="animation-text ib-color-blue">
                   Autonomous Execution
                 </span>
               </div>

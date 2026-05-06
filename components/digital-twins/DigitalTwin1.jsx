@@ -10,10 +10,10 @@ export default function DigitalTwin1() {
           <div className="col-lg-6">
             <div className="content">
               <div className="heading-section wow fadeInUp style-1">
-                <h6 className="tf-color-green">What is it?</h6>
+                <h6 className="ib-color-blue">What is it?</h6>
                 <div className="main-title" style={{ color: "#000", fontSize: "36px", lineHeight: "52px" }}>
                    Not a BIM model. Not a dashboard.{" "}<br />
-                  <span className="animation-text tf-color-green">
+                  <span className="animation-text ib-color-blue">
                    A living replica of your project's operational reality.
                   </span>
                 </div>
