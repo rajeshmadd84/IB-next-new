@@ -36,11 +36,9 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              We denounce with righteous indignation and dislike <br />
-              men who are beguiled and demoralized by the charms <br />
-              pleasure of the moment blinded by desire
+              Practical answers about how the Procurement Dispatch Agent fits into your sourcing workflow — what it automates, what it leaves to your team, and how it handles non-standard items.
             </p>
-            <a href="#" className="tf-button type-1 mb-20">
+            <a href="/faqs" className="tf-button type-1 mb-20">
               <span>Learn More</span>
               <i className="icon-arrow-right2"></i>
             </a>

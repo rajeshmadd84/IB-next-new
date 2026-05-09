@@ -11,12 +11,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 1,
     },
     {
-      url: "https://intellibyld.com/about",
-      lastModified,
-      changeFrequency: "monthly",
-      priority: 0.8,
-    },
-    {
       url: "https://intellibyld.com/agentic-ai",
       lastModified,
       changeFrequency: "monthly",

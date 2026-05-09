@@ -36,9 +36,7 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              We denounce with righteous indignation and dislike <br />
-              men who are beguiled and demoralized by the charms <br />
-              pleasure of the moment blinded by desire
+             Common questions about how the Shipment Orchestration Agent monitors live shipments, when it acts on its own versus when it asks first, and how it works with international freight and the rest of the agent stack.
             </p>
             <a href="#" className="tf-button type-1 mb-20">
               <span>Learn More</span>

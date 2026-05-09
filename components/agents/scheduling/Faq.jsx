@@ -36,9 +36,7 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              We denounce with righteous indignation and dislike <br />
-              men who are beguiled and demoralized by the charms <br />
-              pleasure of the moment blinded by desire
+             Common questions about how the Predictive Scheduling Agent reads BIM and schedule data, how far ahead it forecasts, what happens without BIM, and how procurement teams stay in control of call-off dates.
             </p>
             <a href="#" className="tf-button type-1 mb-20">
               <span>Learn More</span>
