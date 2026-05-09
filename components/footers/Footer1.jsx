@@ -73,11 +73,11 @@ export default function Footer1() {
           <div className="col-12">
             <div className="footer-bottom">
               <p className="text mb-0">
-                Copyright @{new Date().getFullYear()},{" "}
+                Copyright © 2026{" "}
                 <a className="ib-color-blue" href="#">
                   IntelliByld
-                </a>{" "}
-                All Rights Reserved
+                </a>
+                . All Rights Reserved.
               </p>
 
             </div>

@@ -31,6 +31,10 @@ const spaceGrotesk = Space_Grotesk({
   display: "swap",
 });
 
+export const metadata = {
+  metadataBase: new URL("https://www.intellibyld.com"),
+};
+
 export default function RootLayout({ children }) {
   return (
     <html

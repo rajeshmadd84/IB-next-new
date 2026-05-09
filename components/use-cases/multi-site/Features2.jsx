@@ -39,10 +39,19 @@ export default function Features2() {
             </div>
           </div>
           <div className="col-lg-40">
-            <div className="image wow fadeInUp">
+            <div
+              className="image wow fadeInUp"
+              style={{
+                padding: "4px 5px",
+                background: "transparent",
+                border: "1px solid var(--color-primary)",
+                borderRadius: "8px",
+                overflow: "hidden",
+              }}
+            >
               <Image
                 className="w-full"
-                src="/assets/images/bg-section/image-18.png"
+                src="/assets/images/bg-section/multisite.png"
                 alt="image"
                 width={530}
                 height={350}
