@@ -13,7 +13,8 @@ import Testimonials from "@/components/agents/shipment/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
   title: 'Shipment Orchestration Agent | Live Construction Logistics tracking, planning & Rerouting| Intellibyld',
-  description: 'AI agent that monitors live construction shipments and reroutes before delays hit the site. Detect, analyze, pivot, sync — built for construction logistics.',
+  description:
+    "AI agent that monitors live construction shipments and reroutes them before delays hit site. Detect, analyse, pivot, sync.",
 };
 import React from "react";
 import Capabilities from "@/components/agents/shipment/Capabilities";

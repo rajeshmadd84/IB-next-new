@@ -23,7 +23,7 @@ export default function page() {
     applicationCategory: "ConstructionTechnologySoftware",
     operatingSystem: "Cloud",
     url: "https://intellibyld.com",
-    description: "IntelliByld is the OS for autonomous construction supply chains. It uses a Construction-Trained SLM, Agentic AI agents, and Real-Time Digital Twins to coordinate procurement, shipping, and bid evaluation — autonomously.",
+    description: "IntelliByld is the Agentic AI for autonomous construction supply chains. It uses a Construction-Trained SLM, Agentic AI agents, and Real-Time Digital Twins to coordinate procurement, shipping, and bid evaluation — autonomously.",
     offers: {
       "@type": "Offer",
       price: "0",

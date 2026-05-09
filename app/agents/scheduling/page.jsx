@@ -17,7 +17,8 @@ import UseCase from "@/components/agents/scheduling/UseCase";
 import WorksWith from "@/components/agents/scheduling/WorksWith";
 export const metadata = {
   title: 'Predictive Scheduling Agent | BIM-Linked Material Call-Off Planning | Intellibyld',
-  description: 'AI agent that aligns material delivery dates with BIM models, weather forecasts, and crew availability. Materials arrive when crews are ready — not before, not after.',
+  description:
+    "AI agent that aligns material delivery with BIM, weather, and crew progress — so materials arrive exactly when crews are ready.",
 };
 
 

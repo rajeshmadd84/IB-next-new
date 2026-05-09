@@ -12,7 +12,8 @@ import Tools from "@/components/use-cases/Tools";
 import React from "react";
 export const metadata = {
   title: "Use Cases || MunAi - AI Writer & Copywriting Nextjs Template",
-  description: "MunAi - AI Writer & Copywriting Nextjs Template",
+  description:
+    "Meet IntelliByld's autonomous agents for procurement, scheduling, and shipment — coordinating construction supply chains in real time.",
 };
 export default function page() {
   return (

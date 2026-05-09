@@ -1,7 +1,7 @@
 import Cta from "@/components/common/Cta";
 import Mouse from "@/components/common/Mouse";
 import ScrollTop from "@/components/common/ScrollTop";
-import Footer2 from "@/components/footers/Footer2";
+import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
 import Faq from "@/components/digital-twins/Faq";
 import DigitalTwin1 from "@/components/digital-twins/DigitalTwin1";
@@ -12,7 +12,7 @@ import Tools from "@/components/digital-twins/Tools";
 import React from "react";
 
 export const metadata = {
-  title: "Digital Twins || Intellibyld - The OS for Construction Supply Chains",
+  title: "Digital Twins || Intellibyld - The Agentic AI for Construction Supply Chains",
   description:
     "See how Intellibyld's Digital Twins give you real-time visibility across every material, shipment, and site in your construction project.",
 };
@@ -29,7 +29,7 @@ export default function page() {
             <DigitalTwin2 />
             <Features1 />
           </div>
-          <Footer2 />
+          <Footer1 />
         </div>
       </div>
       

@@ -8,8 +8,23 @@ export default function Faq() {
     title: question,
     content: answer,
   }));
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: shipmentFaqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  };
+
   return (
     <div className="faqs-wrap-1 type-1">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-5">

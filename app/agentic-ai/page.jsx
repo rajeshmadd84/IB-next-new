@@ -9,11 +9,10 @@ import FlatTitle from "@/components/agentic-ai/FlatTitle";
 import Tools from "@/components/agentic-ai/Tools";
 import React from "react";
 import Header2 from "@/components/headers/Header2";
-import Footer2 from "@/components/footers/Footer2";
 import Agent1 from "@/components/agentic-ai/Agent1";
 import AgentsShowcase from "@/components/agentic-ai/AgentsShowcase";
 export const metadata = {
-  title: "Agentic AI || Intellibyld - The OS for Construction Supply Chains",
+  title: "Agentic AI || Intellibyld - The Agentic AI for Construction Supply Chains",
   description:
     "Discover how Intellibyld's Agentic AI automates procurement, shipment tracking, and bid evaluation for construction supply chains.",
 };
@@ -30,8 +29,9 @@ export default function page() {
             <AgentsShowcase />
             <Tools />
             <Features />
+            <Faq />
           </div>
-          <Footer2 />
+          <Footer1 />
         </div>
       </div>
 

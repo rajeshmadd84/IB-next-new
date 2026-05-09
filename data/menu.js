@@ -16,6 +16,29 @@ export const menuItems = [
     url: "/digital-twins",
   },
   {
+    id: 8,
+    text: "Use Cases",
+    url: "/use-cases",
+    hasChildren: true,
+    subMenu: [
+      {
+        id: 81,
+        text: "Supplier Delay Neutralization",
+        url: "/use-cases/supplier-delay-neutralization",
+      },
+      {
+        id: 82,
+        text: "Multi-Site Coordination",
+        url: "/use-cases/multi-site-coordination",
+      },
+      {
+        id: 83,
+        text: "Embodied Carbon",
+        url: "/use-cases/embodied-carbon",
+      },
+    ],
+  },
+  {
     id: 6,
     text: "Sustainability",
     url: "/sustainability",

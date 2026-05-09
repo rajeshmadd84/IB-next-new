@@ -14,12 +14,12 @@ export default function Team() {
           <div className="col-12">
             <div className="heading-section wow fadeInUp text-center">
               
-              <div className="main-title" style={{ color: "#fff" }}>
+              <div className="main-title">
                 Meet our core 
                 {" "}
                 <span className="animation-text ib-color-blue">Team</span>
               </div>
-              <p style={{ color: "#fff", fontSize: "18px", lineHeight: "30px", marginTop: 18, marginBottom: 0 }}>
+              <p style={{ fontSize: "18px", lineHeight: "30px", marginTop: 18, marginBottom: 0 }}>
                 We build IntelliByld’s digital workforce: Agentic AI and living Digital Twins that turn construction supply chain data into execution.
               </p>
             </div>

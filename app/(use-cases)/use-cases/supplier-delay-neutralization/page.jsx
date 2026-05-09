@@ -12,8 +12,9 @@ import Steps from "@/components/use-cases/delay/Steps";
 import Testimonials from "@/components/use-cases/delay/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
-  title: 'Use Case | The OS for Autonomous Construction Supply Chains',
-  description: 'IntelliByld uses Agentic AI and Digital Twins to transform construction logistics into autonomous, data-driven operations. Headquartered in Singapore.',
+  title: 'Use Case | The Agentic AI for Autonomous Construction Supply Chains',
+  description:
+    "IntelliByld detects supplier delays from live shipping data and re-sequences crews, schedules, and procurement before site is hit.",
 };
 import React from "react";
 

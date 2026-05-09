@@ -18,7 +18,7 @@ export default function Banner() {
                 <span className="ib-color-blue">Supply Chains</span>
               </div>
               <p>
-                <strong>Intellibyld is the OS for construction supply chains</strong> that orchestrates fragmented logistics into Autonomous Execution.
+                <strong>Intellibyld is the Agentic AI for construction supply chains</strong> that orchestrates fragmented logistics into Autonomous Execution.
                 It uses a <strong>Construction-Trained SLM</strong> to keep your project on schedule and your carbon footprint on target.
               </p>
               <div className="grid-button flex gap20 items-center mb-50">

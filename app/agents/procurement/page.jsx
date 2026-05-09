@@ -13,7 +13,8 @@ import Testimonials from "@/components/agents/procurement/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
   title: 'Procurement Dispatch Agent | Automated RFQ Generation for Construction | Intellibyld',
-  description: 'AI agent that turns BIM takeoffs into RFQs and dispatches them to ranked vendors automatically. Cuts construction sourcing cycles from days to hours.',
+  description:
+    "AI agent that turns BIM takeoffs into RFQs and dispatches them to ranked vendors. Cuts construction sourcing cycles from days to hours.",
 };
 import React from "react";
 import Capabilities from "@/components/agents/procurement/Capabilities";

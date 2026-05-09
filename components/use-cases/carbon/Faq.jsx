@@ -1,15 +1,30 @@
 import React from "react";
 import Accordion from "@/components/common/Accordion";
-import { multisiteFaqs } from "@/data/useCasesFaq";
+import { carbonFaqs } from "@/data/useCasesFaq";
 
 export default function Faq() {
-  const faqData = multisiteFaqs.map(({ question, answer, ...rest }) => ({
+  const faqData = carbonFaqs.map(({ question, answer, ...rest }) => ({
     ...rest,
     title: question,
     content: answer,
   }));
+
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: carbonFaqs.map(({ question, answer }) => ({
+      "@type": "Question",
+      name: question,
+      acceptedAnswer: { "@type": "Answer", text: answer },
+    })),
+  };
+
   return (
     <div className="faqs-wrap-1 type-1">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
+      />
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-5">

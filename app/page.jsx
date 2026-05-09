@@ -4,6 +4,7 @@ import Banner from "@/components/home/Banner";
 import Cta from "@/components/home/Cta";
 import DigitalTwin from "@/components/home/DigitalTwin";
 import AgenticAi from "@/components/home/AgenticAi";
+import AgentsShowcase from "@/components/agentic-ai/AgentsShowcase";
 import Features from "@/components/home/Features";
 import EditorLanguages from "@/components/home/EditorLanguages";
 import Faq from "@/components/home/Faq";
@@ -18,7 +19,7 @@ import { faqs } from "@/data/faq";
 export const revalidate = 86400;
 // 1. Technical SEO: Metadata for Search Engines
 export const metadata = {
-  title: 'IntelliByld | The OS for Autonomous Construction Supply Chains',
+  title: 'IntelliByld | The Agentic AI for Autonomous Construction Supply Chains',
   description: 'IntelliByld uses Agentic AI and Digital Twins to transform construction logistics into autonomous, data-driven operations. Headquartered in Singapore.',
   keywords: ['Construction Supply Chain', 'Agentic AI', 'BIM Integration', 'Singapore BCA IDD', 'Autonomous Logistics'],
   alternates: {
@@ -63,7 +64,7 @@ export default function page() {
     keywords:
       "construction supply chain AI, agentic AI construction, digital twin construction, autonomous procurement, BCA compliance, Singapore IDD, RFQ automation, Agentic AI, Digital Twin, Supply chain automation, Construction logistics",
     description:
-      "IntelliByld is the OS for autonomous construction supply chains. It uses a Construction-Trained SLM, Agentic AI agents, and Real-Time Digital Twins to coordinate procurement, shipping, and bid evaluation — autonomously.",
+      "IntelliByld is the Agentic AI for autonomous construction supply chains. It uses a Construction-Trained SLM, Agentic AI agents, and Real-Time Digital Twins to coordinate procurement, shipping, and bid evaluation — autonomously.",
     featureList: [
       "Construction-Trained Small Language Model (SLM)",
       "Real-Time Digital Twin of construction supply chain",
@@ -83,27 +84,7 @@ export default function page() {
       priceCurrency: "SGD",
       priceValidUntil: "2026-12-31"
     },
-    "creator": {                                          // ✅ Fixed: author → creator
-      "@type": "Organization",
-      "@id": "https://intellibyld.com/#org",
-      name: "IntelliByld",
-      url: "https://intellibyld.com",
-      founder: [                                        // ✅ Fixed: founders → founder
-        { "@type": "Person", name: "Rajesh Maddineni", jobTitle: "CEO & Co-Founder" },
-        { "@type": "Person", name: "Thaun S Kalimili", jobTitle: "CTO & Co-Founder" },
-        { "@type": "Person", name: "Hari Sagaran", jobTitle: "CGO & Co-Founder" },
-        { "@type": "Person", name: "Jidesh Kambil", jobTitle: "CBDO & Founding Advisor" }
-      ],
-      foundingDate: "2026",
-      sameAs: ["https://www.linkedin.com/company/intellibyld"],
-      address: {
-        "@type": "PostalAddress",
-        "streetAddress": "21 Pandan Avenue #04-A Senkee Logistics Hub,",
-        "addressLocality": "Singapore",
-        "postalCode": "609388",
-        "addressCountry": "SG",
-      },
-    },
+    "creator": { "@id": "https://intellibyld.com/#org" },
     author: {
       "@type": "Organization",
       name: "IntelliByld",
@@ -135,12 +116,50 @@ export default function page() {
     })),
   };
 
-  const localBusinessSchema = {
+  // Founder Person schemas — LinkedIn URLs are placeholders.
+  // TODO: replace each `sameAs` entry with the founder's actual LinkedIn URL.
+  const founderPersons = [
+    {
+      "@type": "Person",
+      "@id": "https://intellibyld.com/#person-rajesh-maddineni",
+      name: "Rajesh Maddineni",
+      jobTitle: "CEO & Co-Founder",
+      worksFor: { "@id": "https://intellibyld.com/#org" },
+      sameAs: ["https://www.linkedin.com/in/rajeshmaddineni/"],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellibyld.com/#person-thaun-kalimili",
+      name: "Thaun S Kalimili",
+      jobTitle: "CTO & Co-Founder",
+      worksFor: { "@id": "https://intellibyld.com/#org" },
+      sameAs: ["https://www.linkedin.com/in/thaun-kalimili/"],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellibyld.com/#person-hari-sagaran",
+      name: "Hari Sagaran",
+      jobTitle: "CGO & Co-Founder",
+      worksFor: { "@id": "https://intellibyld.com/#org" },
+      sameAs: ["https://www.linkedin.com/in/hari-sagaran/"],
+    },
+    {
+      "@type": "Person",
+      "@id": "https://intellibyld.com/#person-jidesh-kambil",
+      name: "Jidesh Kambil",
+      jobTitle: "CBDO & Founding Advisor",
+      worksFor: { "@id": "https://intellibyld.com/#org" },
+      sameAs: ["https://www.linkedin.com/in/jidesh-kambil/"],
+    },
+  ];
+
+  const organizationSchema = {
     "@context": "https://schema.org",
     "@type": "Organization",
     "@id": "https://intellibyld.com/#org",
     name: "IntelliByld",
     foundingDate: "2026",
+    founder: founderPersons.map((p) => ({ "@id": p["@id"] })),
     knowsAbout: [
       "Agentic AI", "Construction Supply Chain",
       "Digital Twins", "BCA compliance", "Singapore IDD"
@@ -163,14 +182,14 @@ export default function page() {
       latitude: 1.29027,
       longitude: 103.851959,
     },
-    "description": "IntelliByld builds the operating system for autonomous construction supply chains using Agentic AI and Digital Twins.",
+    "description": "IntelliByld is the Agentic AI for autonomous construction supply chains, using Agentic AI agents and Digital Twins.",
     "areaServed": ["Singapore", "Global"],
     "industry": "Construction Technology"
   };
 
   const jsonLd = {
     "@context": "https://schema.org",
-    "@graph": [softwareSchema, faqSchema, localBusinessSchema],
+    "@graph": [softwareSchema, organizationSchema, faqSchema, ...founderPersons],
   };
 
   return (
@@ -191,6 +210,7 @@ export default function page() {
             </div>
             <div className="lavender-line-bg">
               <AgenticAi />
+              <AgentsShowcase />
               <Team />
               <Faq />
             </div>
