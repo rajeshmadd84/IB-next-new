@@ -645,6 +645,24 @@ h6,
   color: #fff;
 }
 
+/* Sticky / fixed Header2 — light background matching the regular header look,
+   instead of the default dark #161616 in style.css. */
+.header.header-green.is-fixed {
+  background: #fff;
+  box-shadow: 0 2px 12px rgba(20, 20, 43, 0.06);
+}
+
+/* Use-case FlatTitle — light variant matching the home banner background.
+   Strips the solid #030014 from .flat-title-page (style.css), so the
+   IB-Blue blur blobs and line.png overlay show on a light surface. */
+.flat-title-page.flat-title-page-light {
+  background: var(--color-primary-50);
+}
+
+.flat-title-page.flat-title-page-light .heading {
+  color: #14142b;
+}
+
 /* Footer 1 — menu link hover color (Platform / Use Cases columns). */
 #footer .wg-menu li a {
   transition: color 0.2s ease;
