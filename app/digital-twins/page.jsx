@@ -28,6 +28,7 @@ export default function page() {
             <DigitalTwin1 />
             <DigitalTwin2 />
             <Features1 />
+            <Faq />
           </div>
           <Footer1 />
         </div>

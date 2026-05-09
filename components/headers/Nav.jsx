@@ -27,7 +27,14 @@ export default function Nav() {
           }`}
         >
           {item.hasChildren ? (
-            <a href={item.url}>{item.text}</a>
+            <a
+              role="button"
+              aria-haspopup="true"
+              tabIndex={0}
+              onClick={(e) => e.preventDefault()}
+            >
+              {item.text}
+            </a>
           ) : (
             <Link className={`menu-item `} href={item.url}>
               {item.text}
@@ -39,9 +46,7 @@ export default function Nav() {
                 <li
                   key={subIndex}
                   className={`menu-item ${
-                    subItem.url.split("/")[1] == pathname.split("/")[1]
-                      ? "current-item"
-                      : ""
+                    subItem.url === pathname ? "current-item" : ""
                   }`}
                 >
                   <Link href={subItem.url}>{subItem.text}</Link>

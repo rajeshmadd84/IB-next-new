@@ -16,6 +16,11 @@ export const menuItems = [
     url: "/digital-twins",
   },
   {
+    id: 6,
+    text: "Sustainability",
+    url: "/sustainability",
+  },
+  {
     id: 8,
     text: "Use Cases",
     url: "/use-cases",
@@ -37,11 +42,6 @@ export const menuItems = [
         url: "/use-cases/embodied-carbon",
       },
     ],
-  },
-  {
-    id: 6,
-    text: "Sustainability",
-    url: "/sustainability",
   },
   {
     id: 7,

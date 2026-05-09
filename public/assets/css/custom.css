@@ -633,6 +633,12 @@ h6,
   color: var(--color-primary);
 }
 
+/* Header menu items use Inter (default body font) instead of Space Grotesk. */
+.menu-primary-menu li a,
+.menu-primary-menu .sub-menu li a {
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
 /* Header2 (.header-green) — dark menu text on light pages, IB-Blue pill with
    white text on hover/active. Inverts the default white-on-dark Header2 look. */
 .header.header-green .menu-primary-menu > li > a {
@@ -643,6 +649,42 @@ h6,
 .header.header-green .menu-primary-menu > li.current-menu-item > a {
   background-color: var(--color-primary);
   color: #fff;
+}
+
+/* Header dropdowns — keep each sub-menu item on a single line. The base rule
+   in style.css uses min-width: 220px which forces longer items to wrap. */
+.menu-primary-menu .sub-menu {
+  min-width: max-content;
+  width: max-content;
+}
+
+.menu-primary-menu .sub-menu li a {
+  white-space: nowrap;
+}
+
+/* Dropdown background = IB-Blue, item text = white. */
+.menu-primary-menu .sub-menu,
+.header.header-green .menu-primary-menu li .sub-menu {
+  background: var(--color-primary);
+  box-shadow: 0 8px 24px rgba(20, 20, 43, 0.12);
+}
+
+.menu-primary-menu .sub-menu li,
+.header.header-green .menu-primary-menu .sub-menu li {
+  border-bottom-color: rgba(255, 255, 255, 0.12);
+}
+
+.menu-primary-menu .sub-menu li a,
+.header.header-green .menu-primary-menu .sub-menu li a {
+  color: #fff;
+}
+
+.menu-primary-menu .sub-menu li.current-item a,
+.menu-primary-menu .sub-menu li a:hover,
+.header.header-green .menu-primary-menu .sub-menu li.current-item a,
+.header.header-green .menu-primary-menu .sub-menu li a:hover {
+  color: #fff;
+  background: var(--color-primary-700);
 }
 
 /* Sticky / fixed Header2 — light background matching the regular header look,

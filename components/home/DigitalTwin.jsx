@@ -38,7 +38,7 @@ export default function DigitalTwin() {
             <div className="image wow fadeInUp">
               <Image
                 className="img-01"
-                src="/assets/images/bg-section/agenticai.jpg"
+                src="/assets/images/bg-section/agenticai.webp"
                 alt="image"
                 width={644}
                 height={476}

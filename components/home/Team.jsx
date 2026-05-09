@@ -41,9 +41,7 @@ export default function Team() {
                   />
                 </div>
                 <div className="content">
-                  <h4>
-                    <a href="#">{member.name}</a>
-                  </h4>
+                  <h4 className="ib-color-blue">{member.name}</h4>
                   <p>{member.role}</p>
                   {linkedInSocial && (
                     <div style={{ marginTop: "24px" }}>
