@@ -1,25 +1,42 @@
-"use client";
-import { useEffect } from "react";
 import "../public/assets/css/main.css";
-
-import { usePathname } from "next/navigation";
+import { Inter, JetBrains_Mono, Geist, Space_Grotesk } from "next/font/google";
 import Script from "next/script";
-import { ToastContainer } from "react-toastify";
+import ClientShell from "./ClientShell";
+
+const inter = Inter({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-sans",
+  display: "swap",
+});
+
+const jetbrainsMono = JetBrains_Mono({
+  subsets: ["latin"],
+  weight: ["500", "600"],
+  variable: "--font-mono",
+  display: "swap",
+});
+
+const geist = Geist({
+  subsets: ["latin"],
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-display",
+  display: "swap",
+});
+
+const spaceGrotesk = Space_Grotesk({
+  subsets: ["latin"],
+  weight: ["500", "600", "700"],
+  variable: "--font-heading",
+  display: "swap",
+});
 
 export default function RootLayout({ children }) {
-  const path = usePathname();
-  let wow = null;
-  useEffect(() => {
-    const { WOW } = require("wowjs");
-    wow = new WOW({
-      live: false,
-      mobile: true,
-    });
-    wow.init();
-  }, [path]);
-
   return (
-    <html lang="en">
+    <html
+      lang="en"
+      className={`${inter.variable} ${jetbrainsMono.variable} ${geist.variable} ${spaceGrotesk.variable}`}
+    >
       <head>
         <link rel="icon" type="image/png" href="/assets/images/icon.png" />
         <Script
@@ -36,18 +53,7 @@ export default function RootLayout({ children }) {
         </Script>
       </head>
       <body>
-        <ToastContainer
-          position="top-right"
-          autoClose={2000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-        />
-        {children}
+        <ClientShell>{children}</ClientShell>
       </body>
     </html>
   );

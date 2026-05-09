@@ -55,7 +55,7 @@ export default function Footer1() {
             <ul className="wg-menu">
               {menuItems.map((item, index) => (
                 <li key={index}>
-                  <a href="#">{item}</a>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
@@ -65,7 +65,7 @@ export default function Footer1() {
             <ul className="wg-menu">
               {menuItems2.map((item, index) => (
                 <li key={index}>
-                  <a href="#">{item}</a>
+                  <a href={item.href}>{item.label}</a>
                 </li>
               ))}
             </ul>
@@ -74,7 +74,7 @@ export default function Footer1() {
             <div className="footer-bottom">
               <p className="text mb-0">
                 Copyright @{new Date().getFullYear()},{" "}
-                <a className="tf-color" href="#">
+                <a className="ib-color-blue" href="#">
                   IntelliByld
                 </a>{" "}
                 All Rights Reserved

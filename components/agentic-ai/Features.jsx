@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Features() {
   return (
-    <div className="wg-flowchart pt-130 pb-130">
+    <div className="wg-flowchart pt-130 pb-130 lavender-line-bg">
       <div className="themesflat-container">
         <div className="heading-section wow fadeInUp text-center" style={{ marginBottom: 42 }}>
           <h6 className="ib-color-blue">How It Works</h6>

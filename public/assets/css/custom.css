@@ -480,3 +480,316 @@ a {
   }
 }
 
+/* Page wrapper — solid lavender + line-art decoration so all sections share
+   one continuous background. Used by sustainability and agentic-ai pages. */
+.sustainability-page-bg,
+.agentic-ai-page-bg {
+  position: relative;
+  background: #f5f5fc;
+  overflow: hidden;
+}
+
+/* Strip the redundant gradient from .list-tool when it's inside the wrapper,
+   otherwise its transparent-at-top gradient leaves a visible white band at
+   the section boundary. */
+.sustainability-page-bg .list-tool,
+.agentic-ai-page-bg .list-tool {
+  background: transparent;
+}
+
+.sustainability-page-bg::before,
+.agentic-ai-page-bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 1300px;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/item-background/line-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.sustainability-page-bg > *,
+.agentic-ai-page-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 767px) {
+  .sustainability-page-bg::before,
+  .agentic-ai-page-bg::before {
+    height: 2200px;
+  }
+}
+
+/* Reusable section-level background — lavender + line-1 decoration.
+   Apply to any standalone section that needs the look. */
+.lavender-line-bg {
+  position: relative;
+  background: #f5f5fc;
+  overflow: hidden;
+}
+
+.lavender-line-bg::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  bottom: 0;
+  left: 0;
+  background-image: url(../images/item-background/line-1.png);
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  opacity: 0.55;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.lavender-line-bg > * {
+  position: relative;
+  z-index: 1;
+}
+
+/* IntelliByld design tokens. Single source of truth for brand colors —
+   reference via var(--token-name) anywhere in CSS or styled-jsx. */
+:root {
+  /* Primary — IntelliByld Blue scale */
+  --color-primary-50: #eff4fe;
+  --color-primary-200: #93b4f5;
+  --color-primary-500: #2563eb; /* brand */
+  --color-primary-700: #1d4fbe;
+  --color-primary-900: #15327a;
+  --color-primary: var(--color-primary-500);
+
+  /* Secondary & accent */
+  --color-sky: #0ea5e9;
+  --color-violet: #7c3aed;
+  --color-amber: #f59e0b;
+
+  /* Semantic */
+  --color-success: #10b981;
+  --color-warning: #eab308;
+  --color-error: #ef4444;
+}
+
+/* Site typography — Inter for body/paragraphs, Space Grotesk for headings.
+   Loaded via next/font/google in app/layout.js (CSS variables bound on <html>). */
+body,
+p,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-sans), system-ui, -apple-system, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.main-title,
+.heading-section .main-title,
+.heading-section .main-title span,
+.wg-banner-2 .content .title,
+.wg-banner-2 .content .title span,
+.flat-title-page .heading,
+.flat-title-page .heading span {
+  font-family: var(--font-heading), system-ui, -apple-system, sans-serif;
+}
+
+.metric {
+  font-family: var(--font-mono), ui-monospace, monospace;
+  font-feature-settings: "tnum";
+}
+
+/* Geist available as a utility — apply by adding class="font-display" */
+.font-display {
+  font-family: var(--font-display), system-ui, -apple-system, sans-serif;
+}
+
+/* Header nav — active/hover state is a white pill with IB-Blue text instead
+   of the default underline. */
+.menu-primary-menu > li:hover > a::before,
+.menu-primary-menu > li.current-menu-item > a::before {
+  display: none;
+}
+
+.menu-primary-menu > li > a {
+  padding: 4px 14px;
+  border-radius: 8px;
+  line-height: 36px;
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
+
+.menu-primary-menu > li:hover > a,
+.menu-primary-menu > li.current-menu-item > a {
+  background-color: #fff;
+  color: var(--color-primary);
+}
+
+/* Header2 (.header-green) — dark menu text on light pages, IB-Blue pill with
+   white text on hover/active. Inverts the default white-on-dark Header2 look. */
+.header.header-green .menu-primary-menu > li > a {
+  color: #14142b;
+}
+
+.header.header-green .menu-primary-menu > li:hover > a,
+.header.header-green .menu-primary-menu > li.current-menu-item > a {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+/* Footer 1 — menu link hover color (Platform / Use Cases columns). */
+#footer .wg-menu li a {
+  transition: color 0.2s ease;
+}
+
+#footer .wg-menu li a:hover {
+  color: var(--color-primary);
+}
+
+/* FAQ "Learn More" button on use-case pages — IB-Blue (overrides the purple
+   default of .tf-button). Scoped to .faqs-wrap-1 so other tf-buttons stay. */
+.faqs-wrap-1 .tf-button.type-1 {
+  background-color: var(--color-primary);
+  color: #fff;
+}
+
+.faqs-wrap-1 .tf-button.type-1:hover {
+  background-color: var(--color-primary-700);
+  color: #fff;
+}
+
+/* ScrollTop progress button background — IB-Blue. */
+.progress-wrap {
+  background: var(--color-primary);
+}
+
+/* Footer social icons (LinkedIn) — IB-Blue background with white icon. */
+#footer ul.wg-social li a {
+  background: var(--color-primary);
+  color: #fff;
+}
+
+#footer ul.wg-social li a:hover {
+  background: var(--color-primary-700);
+  color: #fff;
+}
+
+/* Brand accent class — every .animation-text span renders in IB-Blue,
+   regardless of context. Catches spans that sit outside .main-title. */
+.animation-text {
+  color: var(--color-primary);
+}
+
+/* OPTION-A PREVIEW — light home background. Swaps the near-black .home base
+   (#1d1f21 in style.css) for the brand's lavender so IB-Blue accents read
+   properly. Remove this block to revert to the dark home. */
+.home {
+  background: var(--color-primary-50);
+  color: #14142b;
+}
+
+/* On the light home, default-flip white text → dark. Headings, paragraphs,
+   list items, anchors, generic .text containers. Buttons and explicit accent
+   classes (.ib-color-blue, .animation-text) are preserved by their own rules
+   below. */
+.home h1,
+.home h2,
+.home h3,
+.home h4,
+.home h5,
+.home h6,
+.home p,
+.home li,
+.home a,
+.home .text,
+.home .heading,
+.home .main-title,
+/* Higher-specificity overrides that beat the existing style-1 white rules
+   in shortcodes.css (heading-section.style-1, wg-create-design.style-1). */
+.home .heading-section.style-1 .main-title,
+.home .heading-section.style-1 h6,
+.home .wg-create-design.style-1 .content .main-title,
+.home .wg-create-design.style-1 .content h6,
+.home .wg-create-design.style-1 .content p,
+.home .wg-create-design.style-1 .content,
+.home .wg-banner-2 .content .title,
+.home .wg-banner-2 .content > p {
+  color: #14142b;
+}
+
+/* Brand accent colors stay IB-Blue inside .home. */
+.home .ib-color-blue,
+.home .animation-text,
+.home .heading-section h6.ib-color-blue,
+.home .heading-section .main-title span {
+  color: var(--color-primary) !important;
+}
+
+/* Buttons keep their own foreground. */
+.home .tf-button,
+.home .tf-button *,
+.home button {
+  color: #fff;
+}
+
+.home .tf-button:hover,
+.home .tf-button:hover * {
+  color: var(--color-primary);
+}
+
+/* Banner decorative rings — recolour the dashed borders from white to IB-Blue
+   so they stay visible on the light home background. */
+.home .wg-banner-2 .image .item-3 {
+  border-color: var(--color-primary);
+}
+
+.home .wg-banner-2 .image .item-4 {
+  border-color: rgba(37, 99, 235, 0.25);
+}
+
+/* FAQ accordion titles — IB-Blue (overrides the default dark/white title color
+   in shortcodes.css for both .flat-accordion and .flat-accordion2 variants). */
+.flat-accordion .flat-toggle .toggle-title,
+.flat-accordion2 .flat-toggle2 .toggle-title,
+.faqs-wrap-1 .flat-toggle h4.toggle-title,
+.faqs-wrap-1.type-1 .flat-toggle h4.toggle-title {
+  color: var(--color-primary);
+}
+
+/* When an accordion item is opened (active) — IB-Blue background with
+   white text. Covers both accordion variants and the .faqs-wrap-1.type-1
+   modifier that sets a white card background. */
+.flat-accordion .flat-toggle.active,
+.flat-accordion2 .flat-toggle2.active,
+.faqs-wrap-1 .flat-toggle.active,
+.faqs-wrap-1.type-1 .flat-toggle.active {
+  background: var(--color-primary);
+}
+
+.flat-accordion .flat-toggle.active .toggle-title,
+.flat-accordion2 .flat-toggle2.active .toggle-title,
+.faqs-wrap-1 .flat-toggle.active h4.toggle-title,
+.faqs-wrap-1.type-1 .flat-toggle.active h4.toggle-title {
+  color: #fff;
+}
+
+.flat-accordion .flat-toggle.active .toggle-content p,
+.flat-accordion2 .flat-toggle2.active .toggle-content p,
+.faqs-wrap-1 .flat-toggle.active .toggle-content p {
+  color: rgba(255, 255, 255, 0.92);
+}
+
+.flat-accordion .flat-toggle.active .toggle-title::after,
+.flat-accordion2 .flat-toggle2.active .toggle-title::after,
+.faqs-wrap-1 .flat-accordion .flat-toggle.active .toggle-title::after,
+.faqs-wrap-1.type-1 .flat-accordion .flat-toggle.active .toggle-title::after {
+  color: #fff !important;
+}

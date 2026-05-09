@@ -2,14 +2,14 @@ import Cta from "@/components/common/Cta";
 
 import Mouse from "@/components/common/Mouse";
 import ScrollTop from "@/components/common/ScrollTop";
-import Footer2 from "@/components/footers/Footer2";
+import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
-import Faq from "@/components/delay/Faq";
-import Features2 from "@/components/delay/Features2";
-import Comparison from "@/components/delay/Comparison";
-import FlatTitle from "@/components/delay/FlatTitle";
-import Steps from "@/components/delay/Steps";
-import Testimonials from "@/components/delay/Testimonials";
+import Faq from "@/components/use-cases/delay/Faq";
+import Features2 from "@/components/use-cases/delay/Features2";
+import Comparison from "@/components/use-cases/delay/Comparison";
+import FlatTitle from "@/components/use-cases/delay/FlatTitle";
+import Steps from "@/components/use-cases/delay/Steps";
+import Testimonials from "@/components/use-cases/delay/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
   title: 'Use Case | The OS for Autonomous Construction Supply Chains',
@@ -36,7 +36,7 @@ export default function page() {
 
           
 
-          <Footer2 />
+          <Footer1 />
         </div>
       </div>
       

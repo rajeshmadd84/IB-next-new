@@ -1,19 +1,28 @@
 export const menuItems = [
-  "Agentic AI",
-  "Digital Twins",
-  "Sustainability",
-  "Contact Us",
+  { label: "Agentic AI", href: "/agentic-ai" },
+  { label: "Digital Twins", href: "/digital-twins" },
+  { label: "Sustainability", href: "/sustainability" },
+  { label: "Contact Us", href: "/contact-us" },
 ];
 
 export const menuItems2 = [
-  "Supplier Delay Neutralization",
-  "Multi-Site Supply Chain Coordination",
-  "Embodied Carbon Management",
-  
+  {
+    label: "Supplier Delay Neutralization",
+    href: "/use-cases/supplier-delay-neutralization",
+  },
+  {
+    label: "Multi-Site Supply Chain Coordination",
+    href: "/use-cases/multi-site-coordination",
+  },
+  {
+    label: "Embodied Carbon Management",
+    href: "/use-cases/embodied-carbon",
+  },
 ];
+
 export const menuItems3 = [
-  "Download Ai",
-  "Setting & Privacy",
-  "FAQs",
-  "Contact Us",
+  { label: "Download Ai", href: "#" },
+  { label: "Setting & Privacy", href: "#" },
+  { label: "FAQs", href: "#" },
+  { label: "Contact Us", href: "/contact-us" },
 ];

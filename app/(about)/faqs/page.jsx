@@ -4,7 +4,9 @@ import Header2 from "@/components/headers/Header2";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
 import Faq3 from "@/components/about/Faq3";
+import UseCaseFaqs from "@/components/about/UseCaseFaqs";
 import { faqs4 } from "@/data/faq";
+import { delaysFaqs, multisiteFaqs, carbonFaqs } from "@/data/useCasesFaq";
 
 export const metadata = {
   title: 'IntelliByld FAQs — Construction Supply Chain AI Questions Answered',
@@ -16,17 +18,24 @@ export const metadata = {
 
 export default function FAQsPage() {
 
+  const generalEntries = faqs4.map((faq) => ({
+    "@type": "Question",
+    "name": faq.title,
+    "acceptedAnswer": { "@type": "Answer", "text": faq.content },
+  }));
+
+  const useCaseEntries = [...delaysFaqs, ...multisiteFaqs, ...carbonFaqs].map(
+    (faq) => ({
+      "@type": "Question",
+      "name": faq.question,
+      "acceptedAnswer": { "@type": "Answer", "text": faq.answer },
+    })
+  );
+
   const faqSchema = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    "mainEntity": faqs4.map((faq) => ({
-      "@type": "Question",
-      "name": faq.title,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.content,
-      },
-    })),
+    "mainEntity": [...generalEntries, ...useCaseEntries],
   }
 
   return (
@@ -41,6 +50,7 @@ export default function FAQsPage() {
           <FlatTitle2 />
 
           <Faq3 />
+          <UseCaseFaqs />
 
           <Footer2 />
         </div>

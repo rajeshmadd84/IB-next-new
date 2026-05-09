@@ -3,7 +3,7 @@ import React from "react";
 
 export default function Faq() {
   return (
-    <div className="faqs-wrap-1 home2-banner-bg">
+    <div className="faqs-wrap-1 type-1 home2-banner-bg">
       <div className="bg-item">
         <div className="item-1" />
         <div className="item-2" />

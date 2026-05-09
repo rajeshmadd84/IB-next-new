@@ -24,11 +24,11 @@ export default function page() {
         <div id="page" className="">
           <Header2 />
           <FlatTitle />
-          <DigitalTwin1 />
-          <DigitalTwin2 />
-          <Features1 />
-          
-          
+          <div className="lavender-line-bg">
+            <DigitalTwin1 />
+            <DigitalTwin2 />
+            <Features1 />
+          </div>
           <Footer2 />
         </div>
       </div>

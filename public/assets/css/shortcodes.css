@@ -1191,7 +1191,7 @@
 }
 
 .heading-section .main-title span {
-  color: #6844ed;
+  color: var(--color-primary);
   line-height: 51px;
 }
 

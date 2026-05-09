@@ -1,9 +1,9 @@
 import React from "react";
-import Accordion from "../common/Accordion";
-import { procurementFaqs } from "@/data/agentsFaq";
+import Accordion from "@/components/common/Accordion";
+import { multisiteFaqs } from "@/data/useCasesFaq";
 
 export default function Faq() {
-  const faqData = procurementFaqs.map(({ question, answer, ...rest }) => ({
+  const faqData = multisiteFaqs.map(({ question, answer, ...rest }) => ({
     ...rest,
     title: question,
     content: answer,
@@ -21,11 +21,12 @@ export default function Faq() {
               </div>
             </div>
             <p className="text">
-              We denounce with righteous indignation and dislike <br />
-              men who are beguiled and demoralized by the charms <br />
-              pleasure of the moment blinded by desire
+              Embodied carbon shouldn&apos;t be a spreadsheet exercise at Stage
+              5. Here&apos;s how IntelliByld pulls live carbon data from every
+              delivery, flags hotspots early, and produces GLA / BREEAM /
+              LETI-aligned reports without manual kgCO₂e entry.
             </p>
-            <a href="#" className="tf-button type-1 mb-20">
+            <a href="/faqs" className="tf-button type-1 mb-20">
               <span>Learn More</span>
               <i className="icon-arrow-right2"></i>
             </a>

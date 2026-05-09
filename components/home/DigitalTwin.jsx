@@ -22,7 +22,7 @@ export default function DigitalTwin() {
                   <span className="ib-color-blue">Supply Chain</span>
                 </div>
               </div>
-              <p style={{ color: "#fff" }}>
+              <p style={{ color: "#000000" }}>
                 <strong>Intellibyld’s Digital Twin creates a living, real-time replica</strong>{" "}
                 of your construction supply chain.
                 It links every material movement to your master project schedule,

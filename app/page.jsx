@@ -1,4 +1,4 @@
-import Footer2 from "@/components/footers/Footer2";
+import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
 import Banner from "@/components/home/Banner";
 import Cta from "@/components/home/Cta";
@@ -186,12 +186,16 @@ export default function page() {
             <Header2 />
             <Banner />
             <Features />
-            <DigitalTwin />
-            <AgenticAi />
-            <Team />
-            <Faq />
+            <div className="lavender-line-bg">
+              <DigitalTwin />
+            </div>
+            <div className="lavender-line-bg">
+              <AgenticAi />
+              <Team />
+              <Faq />
+            </div>
 
-            <Footer2 />
+            <Footer1 />
 
 
 

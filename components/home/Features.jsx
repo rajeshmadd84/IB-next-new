@@ -12,7 +12,7 @@ export default function Doing() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section wow fadeInUp style-1 text-center">
-              <h6 style={{ color: "#fff" }}>What is Intellibyld?</h6>
+              <h6 style={{ color: "#000000" }}>What is Intellibyld?</h6>
               <div className="main-title">
                 <span className="ib-color-blue">Autonomous Execution </span> &nbsp;
                 <br /> for Construction Supply Chains. <br />
@@ -21,7 +21,7 @@ export default function Doing() {
               </div>
               <p
                 style={{
-                  color: "#fff",
+                  color: "#000000",
                   fontSize: "18px",
                   lineHeight: "30px",
                   marginTop: 22,

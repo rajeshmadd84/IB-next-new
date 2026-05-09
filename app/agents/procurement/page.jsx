@@ -2,22 +2,22 @@ import Cta from "@/components/common/Cta";
 
 import Mouse from "@/components/common/Mouse";
 import ScrollTop from "@/components/common/ScrollTop";
-import Footer2 from "@/components/footers/Footer2";
+import Footer1 from "@/components/footers/Footer1";
 import Header2 from "@/components/headers/Header2";
-import Faq from "@/components/procurement/Faq";
-import Features2 from "@/components/procurement/Features2";
-import Comparison from "@/components/procurement/Comparison";
-import FlatTitle from "@/components/procurement/FlatTitle";
-import Steps from "@/components/procurement/Steps";
-import Testimonials from "@/components/procurement/Testimonials";
+import Faq from "@/components/agents/procurement/Faq";
+import Features2 from "@/components/agents/procurement/Features2";
+import Comparison from "@/components/agents/procurement/Comparison";
+import FlatTitle from "@/components/agents/procurement/FlatTitle";
+import Steps from "@/components/agents/procurement/Steps";
+import Testimonials from "@/components/agents/procurement/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
   title: 'Procurement Dispatch Agent | Automated RFQ Generation for Construction | Intellibyld',
   description: 'AI agent that turns BIM takeoffs into RFQs and dispatches them to ranked vendors automatically. Cuts construction sourcing cycles from days to hours.',
 };
 import React from "react";
-import Capabilities from "@/components/procurement/Capabilities";
-import UseCase from "@/components/procurement/UseCase";
+import Capabilities from "@/components/agents/procurement/Capabilities";
+import UseCase from "@/components/agents/procurement/UseCase";
 
 
 
@@ -34,7 +34,7 @@ export default function page() {
           <Comparison />
           <UseCase />
           <Faq />
-          <Footer2 />
+          <Footer1 />
         </div>
       </div>
       

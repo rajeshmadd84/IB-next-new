@@ -19,14 +19,15 @@ export default function page() {
       <div id="wrapper">
         <div id="page" className="">
           <Header2 />
-          <FlatTitle />
-          <Sustainability1 />
-          <Tools />
-          
+          <div className="sustainability-page-bg">
+            <FlatTitle />
+            <Sustainability1 />
+            <Tools />
+          </div>
           <Footer2 />
         </div>
       </div>
-      <Mouse />
+      
       <ScrollTop />
     </>
   );

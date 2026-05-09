@@ -13,7 +13,7 @@ export default function Banner() {
           <div className="col-xl-6 col-12">
             <div className="content">
               <div className="title">
-                The OS for <br /> Construction <br />
+                Agentic AI for <br /> Construction <br />
                 {" "}
                 <span className="ib-color-blue">Supply Chains</span>
               </div>

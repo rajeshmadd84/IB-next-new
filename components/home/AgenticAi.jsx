@@ -22,7 +22,7 @@ export default function AgenticAi() {
                   </span>
                 </div>
               </div>
-              <p style={{ color: "#fff" }}>
+              <p style={{ color: "#000000" }}>
                 <strong>Intellibyld’s Agentic AI executes</strong> across your BIM models, ERP data, and supplier communications to keep construction projects on track.
                 It autonomously manages coordination, makes real-time decisions, and triggers the next logistics action without waiting for manual updates.
               </p>

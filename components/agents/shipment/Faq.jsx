@@ -1,9 +1,9 @@
 import React from "react";
-import Accordion from "../common/Accordion";
-import { multisiteFaqs } from "@/data/useCasesFaq";
+import Accordion from "@/components/common/Accordion";
+import { shipmentFaqs } from "@/data/agentsFaq";
 
 export default function Faq() {
-  const faqData = multisiteFaqs.map(({ question, answer, ...rest }) => ({
+  const faqData = shipmentFaqs.map(({ question, answer, ...rest }) => ({
     ...rest,
     title: question,
     content: answer,

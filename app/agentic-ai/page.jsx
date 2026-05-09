@@ -11,6 +11,7 @@ import React from "react";
 import Header2 from "@/components/headers/Header2";
 import Footer2 from "@/components/footers/Footer2";
 import Agent1 from "@/components/agentic-ai/Agent1";
+import AgentsShowcase from "@/components/agentic-ai/AgentsShowcase";
 export const metadata = {
   title: "Agentic AI || Intellibyld - The OS for Construction Supply Chains",
   description:
@@ -23,12 +24,13 @@ export default function page() {
       <div id="wrapper">
         <div id="page" className="">
           <Header2 />
-          <FlatTitle />
-          <Agent1/>
-          <Tools />
-          <Features />
-
-
+          <div className="agentic-ai-page-bg">
+            <FlatTitle />
+            <Agent1 />
+            <AgentsShowcase />
+            <Tools />
+            <Features />
+          </div>
           <Footer2 />
         </div>
       </div>

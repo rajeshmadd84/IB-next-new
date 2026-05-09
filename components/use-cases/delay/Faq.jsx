@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../common/Accordion";
+import Accordion from "@/components/common/Accordion";
 import { delaysFaqs } from "@/data/useCasesFaq";
 
 export default function Faq() {
@@ -17,15 +17,13 @@ export default function Faq() {
               <h6 className="">FAQs</h6>
               <div className="main-title">
                 Frequently Asked{" "}
-                <span className="animation-text">questions</span>
+                <span className="animation-text" style={{ color: "#2563EB" }}>questions</span>
               </div>
             </div>
             <p className="text">
-              We denounce with righteous indignation and dislike <br />
-              men who are beguiled and demoralized by the charms <br />
-              pleasure of the moment blinded by desire
+              Supplier delays cost projects weeks before anyone speaks up. Here's how IntelliByld detects, analyses, and contains them — without waiting for an email.
             </p>
-            <a href="#" className="tf-button type-1 mb-20">
+            <a href="/faqs" className="tf-button type-1 mb-20">
               <span>Learn More</span>
               <i className="icon-arrow-right2"></i>
             </a>

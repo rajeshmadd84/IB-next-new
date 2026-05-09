@@ -37,10 +37,19 @@ export default function Features2() {
             </div>
           </div>
           <div className="col-lg-40">
-            <div className="image wow fadeInUp">
+            <div
+              className="image wow fadeInUp"
+              style={{
+                padding: 0,
+                background: "transparent",
+                border: "1px solid #2563EB",
+                borderRadius: "12px",
+                overflow: "hidden",
+              }}
+            >
               <Image
                 className="w-full"
-                src="/assets/images/bg-section/image-18.png"
+                src="/assets/images/bg-section/delay-usecase.png"
                 alt="image"
                 width={530}
                 height={350}

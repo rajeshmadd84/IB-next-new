@@ -1,5 +1,5 @@
 import React from "react";
-import Accordion from "../common/Accordion";
+import Accordion from "@/components/common/Accordion";
 import { schedulingFaqs } from "@/data/agentsFaq";
 
 export default function Faq() {
