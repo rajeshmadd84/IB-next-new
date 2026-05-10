@@ -4,7 +4,7 @@ import React from "react";
 
 export default function ContactInfo() {
   return (
-    <div className="contact-info pt-130">
+    <div className="contact-info pt-130 pb-130">
       <div className="themesflat-container">
         <div className="row">
           {contactLinks.map((item) => (

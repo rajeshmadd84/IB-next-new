@@ -87,7 +87,16 @@ export default function Footer1() {
             </ul>
           </div>
           <div className="col-12">
-            <div className="footer-bottom">
+            <div
+              className="footer-bottom"
+              style={{
+                display: "flex",
+                flexWrap: "wrap",
+                alignItems: "center",
+                justifyContent: "space-between",
+                gap: 12,
+              }}
+            >
               <p className="text mb-0">
                 Copyright © 2026{" "}
                 <a className="ib-color-blue" href="#">
@@ -95,7 +104,11 @@ export default function Footer1() {
                 </a>
                 . All Rights Reserved.
               </p>
-
+              <p className="text mb-0">
+                <Link href="/glossary" className="ib-color-blue">
+                  Glossary
+                </Link>
+              </p>
             </div>
           </div>
         </div>

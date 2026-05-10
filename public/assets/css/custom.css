@@ -809,6 +809,34 @@ h6,
   padding-top: 80px;
 }
 
+/* CTA section — neutralise the negative margin-bottom from style.css that
+   was designed to overlap a dark hero/footer behind it. With the current
+   light layout it just causes content overlap. */
+.cta.style-1 {
+  margin-bottom: 0;
+}
+
+/* CTA wrapper (.cta-wrapper-1) — keep the central text + buttons clear of the
+   absolutely-positioned side decorations (item1–item4). */
+.cta-wrapper-1 .cta-title,
+.cta-wrapper-1 > p,
+.cta-wrapper-1 > .flex {
+  position: relative;
+  z-index: 2;
+  max-width: 620px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 991px) {
+  .cta-wrapper-1 .item1,
+  .cta-wrapper-1 .item2,
+  .cta-wrapper-1 .item3,
+  .cta-wrapper-1 .item4 {
+    display: none;
+  }
+}
+
 /* OPTION-A PREVIEW — light home background. Swaps the near-black .home base
    (#1d1f21 in style.css) for the brand's lavender so IB-Blue accents read
    properly. Remove this block to revert to the dark home. */

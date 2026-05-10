@@ -2,6 +2,7 @@ export const menuItems = [
   { label: "Agentic AI", href: "/agentic-ai" },
   { label: "Digital Twins", href: "/digital-twins" },
   { label: "Sustainability", href: "/sustainability" },
+  { label: "FAQs", href: "/faqs" },
   { label: "Contact Us", href: "/contact-us" },
 ];
 

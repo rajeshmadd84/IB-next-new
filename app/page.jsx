@@ -140,7 +140,7 @@ export default function page() {
       name: "Thaun S Kalimili",
       jobTitle: "CTO & Co-Founder",
       worksFor: { "@id": "https://intellibyld.com/#org" },
-      sameAs: ["https://www.linkedin.com/in/thaun-kalimili/"],
+      sameAs: ["https://www.linkedin.com/in/kalimili/"],
     },
     {
       "@type": "Person",
@@ -156,7 +156,7 @@ export default function page() {
       name: "Jidesh Kambil",
       jobTitle: "CBDO & Founding Advisor",
       worksFor: { "@id": "https://intellibyld.com/#org" },
-      sameAs: ["https://www.linkedin.com/in/jidesh-kambil/"],
+      sameAs: ["https://www.linkedin.com/in/jidesh-kambil-6a43a254/"],
     },
   ];
 
@@ -218,6 +218,7 @@ export default function page() {
             <div className="lavender-line-bg">
               <AgenticAi />
               <AgentsShowcase />
+              <Cta />
               <Team />
               <Faq />
             </div>

@@ -1,4 +1,4 @@
-import Cta from "@/components/common/Cta";
+import Cta from "@/components/contact/Cta";
 import ScrollTop from "@/components/common/ScrollTop";
 import ContactInfo from "@/components/contact/ContactInfo";
 import FlatTitle from "@/components/contact/FlatTitle";
@@ -39,7 +39,7 @@ export default function page() {
           <Header2 />
           <FlatTitle />
           <ContactInfo />
-          
+          <Cta />
           <Footer1 />
         </div>
       </div>

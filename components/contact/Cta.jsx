@@ -10,7 +10,7 @@ export default function Cta() {
               <div className="item1" />
               <Image
                 className="item2"
-                src="/assets/images/item-background/cta-1.png"
+                src="/assets/images/item-background/ibicon.png"
                 alt="image"
                 width={158}
                 height={194}
@@ -39,9 +39,7 @@ export default function Cta() {
                 >
                   Apply for Pilot <i className="icon-arrow-right2" />
                 </a>
-                <a href="/contact-us" className="tf-button type-3 h45">
-                  Contact Us <i className="icon-arrow-right2" />
-                </a>
+                
               </div>
             </div>
           </div>
