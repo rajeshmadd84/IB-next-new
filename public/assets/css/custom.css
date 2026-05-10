@@ -305,7 +305,10 @@ a {
   .wg-comparison .comparison-table th,
   .wg-comparison .comparison-table td {
     padding: 16px 18px;
-    font-size: 15px;
+    font-size: 14px;
+  }
+  .wg-comparison .comparison-table thead th {
+    font-size: 17px;
   }
 }
 
@@ -694,15 +697,68 @@ h6,
   box-shadow: 0 2px 12px rgba(20, 20, 43, 0.06);
 }
 
+/* Header2 mobile hamburger — black bars on the light pages (overrides the
+   default white bars set in style.css). */
+.header.header-green .mobile-button:before,
+.header.header-green .mobile-button:after,
+.header.header-green .mobile-button span {
+  background-color: #14142b;
+}
+
+/* Mobile drawer menu — white background with dark text and IB-Blue hover. */
+.mobile-nav-wrap .inner-mobile-nav {
+  background-color: #fff;
+}
+
+#menu-mobile-menu {
+  border-top-color: rgba(20, 20, 43, 0.08);
+}
+
+#menu-mobile-menu > li {
+  border-bottom-color: rgba(20, 20, 43, 0.08);
+}
+
+#menu-mobile-menu li a {
+  color: #14142b;
+  transition: color 0.2s ease;
+}
+
+#menu-mobile-menu li a:hover,
+#menu-mobile-menu li.current-menu-item > a,
+#menu-mobile-menu li.current-item a {
+  color: var(--color-primary);
+}
+
+/* Drawer close-button (white SVG fill set in MobileNav.jsx) — recolour to
+   dark so it remains visible on the now-white drawer. */
+.inner-mobile-nav .mobile-nav-close svg {
+  fill: #14142b;
+}
+
 /* Use-case FlatTitle — light variant matching the home banner background.
    Strips the solid #030014 from .flat-title-page (style.css), so the
    IB-Blue blur blobs and line.png overlay show on a light surface. */
 .flat-title-page.flat-title-page-light {
   background: var(--color-primary-50);
+  padding-top: 130px;
+  padding-bottom: 50px;
 }
 
 .flat-title-page.flat-title-page-light .heading {
   color: #14142b;
+  line-height: 1.1;
+  margin-bottom: 0;
+}
+
+@media (max-width: 600px) {
+  .flat-title-page.flat-title-page-light {
+    padding-top: 110px;
+    padding-bottom: 40px;
+  }
+  .flat-title-page.flat-title-page-light .heading {
+    font-size: 44px;
+    line-height: 1.15;
+  }
 }
 
 /* Footer 1 — menu link hover color (Platform / Use Cases columns). */
@@ -746,6 +802,11 @@ h6,
    regardless of context. Catches spans that sit outside .main-title. */
 .animation-text {
   color: var(--color-primary);
+}
+
+/* Spacing utility — 80px top padding (matches the pt-130 convention). */
+.pt-80 {
+  padding-top: 80px;
 }
 
 /* OPTION-A PREVIEW — light home background. Swaps the near-black .home base

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Counter from "@/components/common/Counter";
 export default function DigitalTwin2() {
   return (
-    <div className="wg-create-design style-3 pb-130 pt-130">
+    <div className="wg-create-design style-3 pt-40 pb-130">
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-6">
@@ -21,15 +21,15 @@ export default function DigitalTwin2() {
                 className="img-01"
                 src="/assets/images/bg-section/dgtwin2.png"
                 alt="Supply chain digital twin"
-                width={560}
-                height={315}
+                width={2795}
+                height={1355}
                 sizes="(max-width: 991px) 100vw, 560px"
                 style={{
                   position: "relative",
                   left: 0,
                   width: "100%",
                   height: "100%",
-                  objectFit: "cover",
+                  objectFit: "contain",
                   borderRadius: 8,
                   display: "block",
                   animation: "none",

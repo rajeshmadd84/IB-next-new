@@ -25,7 +25,7 @@ export default function Footer1() {
                 <Link href={`/`}>
                   <Image
                     id="logo_footer"
-                    src="/assets/images/logo/logo.svg"
+                    src="/assets/images/logo/logo-footer.svg"
                     alt="image"
                     width={166}
                     height={40}

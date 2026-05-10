@@ -3,7 +3,7 @@ import Image from "next/image";
  
 export default function AgentDescription() {
   return (
-    <div className="wg-create-design style-7 pb-130 pt-130">
+    <div className="wg-create-design style-7 pb-130 pt-80">
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-60">
@@ -47,7 +47,16 @@ export default function AgentDescription() {
             </div>
           </div>
           <div className="col-lg-40">
-            <div className="image wow fadeInUp">
+            <div
+              className="image wow fadeInUp"
+              style={{
+                padding: "4px 5px",
+                background: "transparent",
+                border: "1px solid var(--color-primary)",
+                borderRadius: "8px",
+                overflow: "hidden",
+              }}
+            >
               <Image
                 className="w-full"
                 src="/assets/images/bg-section/procurement-agent.png"

@@ -19,7 +19,7 @@ export default function page() {
           <Header2 />
           <FlatTitle />
           <ContactInfo />
-          <Cta overlapFollowingSection={false} />
+          
           <Footer1 />
         </div>
       </div>

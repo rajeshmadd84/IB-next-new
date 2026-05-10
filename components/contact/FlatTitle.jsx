@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 export default function FlatTitle() {
   return (
-    <div className="flat-title-page shop contact-flat-title-compact">
+    <div className="flat-title-page flat-title-page-light shop contact-flat-title-compact">
       <div className="item1 block-blur-1"></div>
       <div className="item2 block-blur-2"></div>
       <div className="item3 block-blur-3"></div>

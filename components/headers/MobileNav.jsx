@@ -56,8 +56,14 @@ export default function MobileNav() {
           >
             {elm.hasChildren ? (
               <a
-                onClick={() => setCurrentIndex((pre) => (pre == i ? -1 : i))}
-                href={elm.url}
+                role="button"
+                aria-haspopup="true"
+                aria-expanded={currentIndex === i}
+                tabIndex={0}
+                onClick={(e) => {
+                  e.preventDefault();
+                  setCurrentIndex((pre) => (pre == i ? -1 : i));
+                }}
               >
                 {elm.text}
               </a>
@@ -76,9 +82,7 @@ export default function MobileNav() {
                   <li
                     key={i2}
                     className={`menu-item ${
-                      elm2.url.split("/")[1] == pathname.split("/")[1]
-                        ? "current-item"
-                        : ""
+                      elm2.url === pathname ? "current-item" : ""
                     }`}
                   >
                     <Link href={elm2.url}>{elm2.text}</Link>

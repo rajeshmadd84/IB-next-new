@@ -2,7 +2,7 @@ import React from "react";
 import Image from "next/image";
 export default function Features2() {
   return (
-    <div className="wg-create-design style-7 pb-130 pt-130">
+    <div className="wg-create-design style-7 pb-130 pt-80">
       <div className="themesflat-container">
         <div className="row">
           <div className="col-lg-60">

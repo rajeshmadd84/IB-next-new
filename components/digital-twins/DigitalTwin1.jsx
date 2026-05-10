@@ -4,7 +4,7 @@ import Image from "next/image";
 import Counter from "@/components/common/Counter";
 export default function DigitalTwin1() {
   return (
-    <div className="wg-create-design style-3 pb-130 pt-130 digital-twin1-mobile-tight">
+    <div className="wg-create-design style-3 pt-130 pb-40 digital-twin1-mobile-tight">
       <div className="themesflat-container">
         <div className="row align-items-center">
           <div className="col-lg-6">
