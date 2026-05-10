@@ -50,7 +50,7 @@ export default function AgentDescription() {
             <div className="image wow fadeInUp">
               <Image
                 className="w-full"
-                src="/assets/images/bg-section/image-18.png"
+                src="/assets/images/bg-section/procurement-agent.png"
                 alt="Procurement Dispatch Agent interface showing automated RFQ generation"
                 width={530}
                 height={350}

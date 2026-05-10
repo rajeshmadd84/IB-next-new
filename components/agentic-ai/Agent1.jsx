@@ -71,12 +71,12 @@ export default function AgenticAi() {
             <div className="image wow fadeInUp">
               <Image
                 className="img-01"
-                src="/assets/images/bg-section/agenticai1.webp"
+                src="/assets/images/bg-section/agentiai2.png"
                 alt="image"
                 width={1376}
                 height={768}
-                sizes="(max-width: 991px) 100vw, 558px"
-                style={{ width: "100%", height: "auto" }}
+                sizes="(max-width: 991px) 100vw, 670px"
+                style={{ width: "120%", height: "auto", maxWidth: "none" }}
               />
             </div>
           </div>

@@ -33,7 +33,7 @@ export default function page() {
           <Features2 />
           <Capabilities />
           <Comparison />
-          <WorksWith />
+          {/* <WorksWith /> */}
           <Faq />
           <Footer1 />
         </div>
