@@ -38,7 +38,7 @@ export default function Comparison() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section wow fadeInUp text-center">
-              <h6>Why the Shipment Orchestration Agent</h6>
+              <h6>Why the Predictive Scheduling Agent</h6>
               <div className="main-title">
                 Manual tracing versus <span className="animation-text ib-color-blue">automated tracking</span>
               </div>

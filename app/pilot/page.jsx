@@ -18,7 +18,7 @@ export default function PilotPage() {
 
     const formData = new FormData(e.currentTarget);
     formData.append("access_key", process.env.NEXT_PUBLIC_WEB3FORMS_KEY);
-    formData.append("subject", "New Pilot Program Application - Intellibyld");
+    formData.append("subject", "New Pilot Program Application - IntelliByld");
 
     try {
       const response = await fetch("https://api.web3forms.com/submit", {
@@ -63,7 +63,7 @@ export default function PilotPage() {
         <div className="pilot-logo">
           <Image
             src="/assets/images/logo/logo-white.svg"
-            alt="Intellibyld"
+            alt="IntelliByld"
             width={150}
             height={40}
           />

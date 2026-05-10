@@ -11,9 +11,27 @@ import Pricing from "@/components/use-cases/Pricing";
 import Tools from "@/components/use-cases/Tools";
 import React from "react";
 export const metadata = {
-  title: "Use Cases || MunAi - AI Writer & Copywriting Nextjs Template",
+  title: "Use Cases | Autonomous Construction Supply Chain | IntelliByld",
   description:
     "See how IntelliByld coordinates supplier delays, multi-site programmes, and embodied carbon — autonomously, across every project.",
+  alternates: { canonical: "https://www.intellibyld.com/use-cases" },
+  openGraph: {
+    title: "Use Cases | IntelliByld",
+    description:
+      "See how IntelliByld coordinates supplier delays, multi-site programmes, and embodied carbon — autonomously, across every project.",
+    url: "https://www.intellibyld.com/use-cases",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Use Cases | IntelliByld",
+    description:
+      "See how IntelliByld coordinates supplier delays, multi-site programmes, and embodied carbon — autonomously, across every project.",
+    images: ["/og-image.png"],
+  },
 };
 export default function page() {
   return (

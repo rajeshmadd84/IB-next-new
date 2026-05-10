@@ -10,12 +10,12 @@ export default function Tools() {
             <div className="heading-section wow fadeInUp text-center">
               <h6>Autonomous Execution</h6>
               <div className="main-title">
-                Why Choose Intellibyld
+                Why Choose IntelliByld
                 <br />
                 <span className="ib-color-blue">Agentic AI</span>
               </div>
               <p style={{ color: "#696969", fontSize: "16px", lineHeight: "24px", marginTop: 18, marginBottom: 0 }}>
-                Intellibyld’s Agentic AI helps teams execute construction supply chain workflows autonomously—from RFQ generation to shipment tracking and bid evaluation.
+                IntelliByld’s Agentic AI helps teams execute construction supply chain workflows autonomously—from RFQ generation to shipment tracking and bid evaluation.
               </p>
             </div>
           </div>

@@ -5,7 +5,7 @@ import React from "react";
 import Link from "next/link";
 import { socialMediaIcons } from "@/data/socials";
 
-import { menuItems, menuItems2 } from "@/data/footer";
+import { menuItems, menuItems2, agentMenuItems } from "@/data/footer";
 export default function Footer1() {
   return (
     <footer id="footer">
@@ -36,7 +36,7 @@ export default function Footer1() {
 
             </div>
           </div>
-          <div className="col-md-4">
+          <div className="col-md-3">
             <div className="footer-title">About</div>
             <p className="text">
               Our Vision is building the execution layer for construction, turning fragmented site communication into autonomous, real-time decisions.
@@ -45,7 +45,13 @@ export default function Footer1() {
             <ul className="wg-social">
               {socialMediaIcons.map((icon, index) => (
                 <li key={index}>
-                  <a href={icon.href} className={icon.className} />
+                  <a
+                    href={icon.href}
+                    className={icon.className}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="IntelliByld on LinkedIn"
+                  />
                 </li>
               ))}
             </ul>
@@ -60,10 +66,20 @@ export default function Footer1() {
               ))}
             </ul>
           </div>
-          <div className="col-md-5">
+          <div className="col-md-3">
             <div className="footer-title">Use Cases </div>
             <ul className="wg-menu">
               {menuItems2.map((item, index) => (
+                <li key={index}>
+                  <a href={item.href}>{item.label}</a>
+                </li>
+              ))}
+            </ul>
+          </div>
+          <div className="col-md-3">
+            <div className="footer-title">Agentic AI</div>
+            <ul className="wg-menu">
+              {agentMenuItems.map((item, index) => (
                 <li key={index}>
                   <a href={item.href}>{item.label}</a>
                 </li>

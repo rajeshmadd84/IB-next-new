@@ -23,7 +23,7 @@ export default function DigitalTwin() {
                 </div>
               </div>
               <p style={{ color: "#fff" }}>
-                <strong>Intellibyld’s Digital Twin creates a living, real-time replica</strong>{" "}
+                <strong>IntelliByld’s Digital Twin creates a living, real-time replica</strong>{" "}
                 of your construction supply chain.
                 It links every material movement to your master project schedule,
                 eliminating the &ldquo;Integration Trap&rdquo; so your digital model mirrors physical site reality.

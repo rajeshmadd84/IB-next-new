@@ -9,12 +9,28 @@ import { faqs4 } from "@/data/faq";
 import { delaysFaqs, multisiteFaqs, carbonFaqs } from "@/data/useCasesFaq";
 
 export const metadata = {
-  title: 'IntelliByld FAQs — Construction Supply Chain AI Questions Answered',
-  description: 'Answers to common questions about IntelliByld — Agentic AI, Digital Twins, BCA compliance, Singapore IDD, and autonomous construction supply chain management.',
-  alternates: {
-    canonical: 'https://www.intellibyld.com/faqs',
+  title: "IntelliByld FAQs — Construction Supply Chain AI Questions Answered",
+  description:
+    "Answers to common questions about IntelliByld — Agentic AI, Digital Twins, BCA compliance, Singapore IDD, and autonomous construction supply chain management.",
+  alternates: { canonical: "https://www.intellibyld.com/faqs" },
+  openGraph: {
+    title: "IntelliByld FAQs",
+    description:
+      "Answers to common questions about IntelliByld — Agentic AI, Digital Twins, BCA compliance, Singapore IDD, and autonomous construction supply chain management.",
+    url: "https://www.intellibyld.com/faqs",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
   },
-}
+  twitter: {
+    card: "summary_large_image",
+    title: "IntelliByld FAQs",
+    description:
+      "Answers to common questions about IntelliByld — Agentic AI, Digital Twins, BCA compliance, Singapore IDD, and autonomous construction supply chain management.",
+    images: ["/og-image.png"],
+  },
+};
 
 export default function FAQsPage() {
 

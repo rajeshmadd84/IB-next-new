@@ -12,9 +12,30 @@ import Steps from "@/components/agents/procurement/Steps";
 import Testimonials from "@/components/agents/procurement/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
-  title: 'Procurement Dispatch Agent | Automated RFQ Generation for Construction | Intellibyld',
+  title:
+    "Procurement Dispatch Agent | Automated RFQ Generation for Construction | IntelliByld",
   description:
     "AI agent that turns BIM takeoffs into RFQs and dispatches them to ranked vendors. Cuts construction sourcing cycles from days to hours.",
+  alternates: {
+    canonical: "https://www.intellibyld.com/agents/procurement",
+  },
+  openGraph: {
+    title: "Procurement Dispatch Agent | IntelliByld",
+    description:
+      "AI agent that turns BIM takeoffs into RFQs and dispatches them to ranked vendors. Cuts construction sourcing cycles from days to hours.",
+    url: "https://www.intellibyld.com/agents/procurement",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Procurement Dispatch Agent | IntelliByld",
+    description:
+      "AI agent that turns BIM takeoffs into RFQs and dispatches them to ranked vendors. Cuts construction sourcing cycles from days to hours.",
+    images: ["/og-image.png"],
+  },
 };
 import React from "react";
 import Capabilities from "@/components/agents/procurement/Capabilities";

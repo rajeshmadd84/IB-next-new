@@ -12,9 +12,27 @@ import Steps from "@/components/use-cases/delay/Steps";
 import Testimonials from "@/components/use-cases/delay/Testimonials";
 import { useCases } from "@/data/features";
 export const metadata = {
-  title: 'Use Case | The Agentic AI for Autonomous Construction Supply Chains',
+  title: "RFQ Agent | Automated RFQ Generation | IntelliByld",
   description:
     "AI agent that generates RFQs from supplier shortlists and project impact analysis — ready for procurement to dispatch in minutes.",
+  alternates: { canonical: "https://www.intellibyld.com/agents/rfq" },
+  openGraph: {
+    title: "RFQ Agent | IntelliByld",
+    description:
+      "AI agent that generates RFQs from supplier shortlists and project impact analysis — ready for procurement to dispatch in minutes.",
+    url: "https://www.intellibyld.com/agents/rfq",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "RFQ Agent | IntelliByld",
+    description:
+      "AI agent that generates RFQs from supplier shortlists and project impact analysis — ready for procurement to dispatch in minutes.",
+    images: ["/og-image.png"],
+  },
 };
 import React from "react";
 

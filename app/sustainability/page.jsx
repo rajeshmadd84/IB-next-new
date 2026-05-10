@@ -6,15 +6,37 @@ import Sustainability1 from "@/components/sustainability/sustainability1";
 import FlatTitle from "@/components/sustainability/FlatTitle";
 import Tools from "@/components/sustainability/Tools";
 import Faq from "@/components/sustainability/Faq";
+import LastUpdated from "@/components/common/LastUpdated";
 import React from "react";
+
+const LAST_UPDATED = "2026-05-10";
 
 export const metadata = {
   title:
-    "Sustainability || Intellibyld - The Agentic AI for Construction Supply Chains",
+    "Sustainability || IntelliByld - The Agentic AI for Construction Supply Chains",
   description:
-    "Track carbon emissions, score suppliers on sustainability, and generate ESG reports with Intellibyld's green construction intelligence.",
+    "Track carbon emissions, score suppliers on sustainability, and generate ESG reports with IntelliByld's green construction intelligence.",
   alternates: {
     canonical: "https://www.intellibyld.com/sustainability",
+  },
+  openGraph: {
+    title: "Sustainability | IntelliByld",
+    description:
+      "Track carbon emissions, score suppliers on sustainability, and generate ESG reports with IntelliByld's green construction intelligence.",
+    url: "https://www.intellibyld.com/sustainability",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "article",
+    publishedTime: "2026-04-01T00:00:00.000Z",
+    modifiedTime: "2026-05-10T00:00:00.000Z",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Sustainability | IntelliByld",
+    description:
+      "Track carbon emissions, score suppliers on sustainability, and generate ESG reports with IntelliByld's green construction intelligence.",
+    images: ["/og-image.png"],
   },
 };
 
@@ -79,6 +101,7 @@ export default function page() {
             <Tools />
             <Faq />
           </div>
+          <LastUpdated date={LAST_UPDATED} />
           <Footer1 />
         </div>
       </div>

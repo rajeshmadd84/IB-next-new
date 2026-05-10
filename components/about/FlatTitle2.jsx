@@ -11,7 +11,7 @@ export default function FlatTitle2() {
         <div className="row">
           <div className="col-12">
             <div className="heading">FAQs</div>
-            <h2>What is Intellibyld?</h2>
+            <h2>What is IntelliByld?</h2>
           </div>
         </div>
       </div>

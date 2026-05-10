@@ -10,11 +10,37 @@ import Comparison from "@/components/use-cases/delay/Comparison";
 import FlatTitle from "@/components/use-cases/delay/FlatTitle";
 import Steps from "@/components/use-cases/delay/Steps";
 import Testimonials from "@/components/use-cases/delay/Testimonials";
+import LastUpdated from "@/components/common/LastUpdated";
 import { useCases } from "@/data/features";
+
+const LAST_UPDATED = "2026-05-10";
 export const metadata = {
-  title: 'Use Case | The Agentic AI for Autonomous Construction Supply Chains',
+  title: "Supplier Delay Neutralization | IntelliByld",
   description:
     "IntelliByld detects supplier delays from live shipping data and re-sequences crews, schedules, and procurement before site is hit.",
+  alternates: {
+    canonical:
+      "https://www.intellibyld.com/use-cases/supplier-delay-neutralization",
+  },
+  openGraph: {
+    title: "Supplier Delay Neutralization | IntelliByld",
+    description:
+      "IntelliByld detects supplier delays from live shipping data and re-sequences crews, schedules, and procurement before site is hit.",
+    url: "https://www.intellibyld.com/use-cases/supplier-delay-neutralization",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "article",
+    publishedTime: "2026-04-01T00:00:00.000Z",
+    modifiedTime: "2026-05-10T00:00:00.000Z",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Supplier Delay Neutralization | IntelliByld",
+    description:
+      "IntelliByld detects supplier delays from live shipping data and re-sequences crews, schedules, and procurement before site is hit.",
+    images: ["/og-image.png"],
+  },
 };
 import React from "react";
 
@@ -34,8 +60,7 @@ export default function page() {
           
 
           <Faq />
-
-          
+          <LastUpdated date={LAST_UPDATED} />
 
           <Footer1 />
         </div>

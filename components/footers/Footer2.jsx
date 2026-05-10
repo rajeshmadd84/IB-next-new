@@ -36,7 +36,7 @@ export default function Footer2() {
             <p className="text mb-0">
               Copyright @{new Date().getFullYear()},{" "}
 
-              Intellibyld | All Rights Reserved
+              IntelliByld | All Rights Reserved
 
 
             </p>

@@ -14,7 +14,10 @@ import Team from "@/components/home/Team";
 import Testimonials from "@/components/home/Testimonials";
 import React from "react";
 import ScrollTop from "@/components/common/ScrollTop";
+import LastUpdated from "@/components/common/LastUpdated";
 import { faqs } from "@/data/faq";
+
+const LAST_UPDATED = "2026-05-10";
 
 export const revalidate = 86400;
 // 1. Technical SEO: Metadata for Search Engines
@@ -26,19 +29,23 @@ export const metadata = {
     canonical: "https://www.intellibyld.com/",
   },
   openGraph: {
-    title: 'IntelliByld - Construction Supply Chain Intelligence',
-    description: 'Transforming fragmented construction data into real-time execution insights.',
-    url: 'https://intellibyld.com',
-    siteName: 'IntelliByld',
-    images: [
-      {
-        url: '/og-image.png', // Ensure you have an OG image in your public folder
-        width: 1200,
-        height: 630,
-      },
-    ],
-    locale: 'en_SG',
-    type: 'website',
+    title: "IntelliByld - Construction Supply Chain Intelligence",
+    description:
+      "Transforming fragmented construction data into real-time execution insights.",
+    url: "https://www.intellibyld.com",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "article",
+    publishedTime: "2026-04-01T00:00:00.000Z",
+    modifiedTime: "2026-05-10T00:00:00.000Z",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "IntelliByld - Construction Supply Chain Intelligence",
+    description:
+      "Transforming fragmented construction data into real-time execution insights.",
+    images: ["/og-image.png"],
   },
 };
 export default function page() {
@@ -214,6 +221,7 @@ export default function page() {
               <Team />
               <Faq />
             </div>
+            <LastUpdated date={LAST_UPDATED} />
 
             <Footer1 />
 

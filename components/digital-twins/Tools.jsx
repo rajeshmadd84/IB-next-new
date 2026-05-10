@@ -10,7 +10,7 @@ export default function Tools() {
             <div className="heading-section wow fadeInUp text-center">
               <h6>Real-Time Visibility</h6>
               <div className="main-title">
-                Why Choose Intellibyld
+                Why Choose IntelliByld
                 <br />
                 <span className="ib-color-blue">Digital Twins</span>
               </div>

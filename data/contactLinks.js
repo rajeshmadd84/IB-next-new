@@ -17,7 +17,7 @@ export const contactLinks = [
     title: "Singapore",
     link: null,
     description:
-      "Intellibyld Pte Ltd (Pending Registration)\n\nEmail: hello@intellibyld.com\n 21 Pandan Avenue #04-A Senkee Logistics Hub,\nSingapore 609388",
+      "IntelliByld Pte Ltd (Pending Registration)\n\nEmail: hello@intellibyld.com\n 21 Pandan Avenue #04-A Senkee Logistics Hub,\nSingapore 609388",
     delay: "0.1s",
   },
 ];

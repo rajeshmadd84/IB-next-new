@@ -26,3 +26,18 @@ export const menuItems3 = [
   { label: "FAQs", href: "#" },
   { label: "Contact Us", href: "/contact-us" },
 ];
+
+export const agentMenuItems = [
+  {
+    label: "Procurement Dispatch Agent",
+    href: "/agents/procurement",
+  },
+  {
+    label: "Predictive Scheduling Agent",
+    href: "/agents/scheduling",
+  },
+  {
+    label: "Shipment Orchestration Agent",
+    href: "/agents/shipment",
+  },
+];

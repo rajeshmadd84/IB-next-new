@@ -12,7 +12,7 @@ export default function Features() {
             <span className="ib-color-blue">Neutralization</span>
           </div>
           <p style={{ color: "#696969", margin: "18px auto 0", maxWidth: 760, lineHeight: "24px" }}>
-            Intellibyld’s Agentic AI neutralizes autonomous delays by detecting and flagging exceptions from live shipping and communications, analyzing impact in the digital twin, pivoting schedules, and syncing stakeholders until the project is back in sync.
+            IntelliByld’s Agentic AI neutralizes autonomous delays by detecting and flagging exceptions from live shipping and communications, analyzing impact in the digital twin, pivoting schedules, and syncing stakeholders until the project is back in sync.
           </p>
         </div>
         <div className="flowchart-row">

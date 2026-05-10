@@ -6,7 +6,26 @@ import { glossaryTerms } from "@/data/glossary";
 
 export const metadata = {
   title: "Glossary | IntelliByld",
-  description: "Learn the terminology behind autonomous construction supply chains, Agentic AI, and Digital Twins.",
+  description:
+    "Learn the terminology behind autonomous construction supply chains, Agentic AI, and Digital Twins.",
+  alternates: { canonical: "https://www.intellibyld.com/glossary" },
+  openGraph: {
+    title: "Glossary | IntelliByld",
+    description:
+      "Learn the terminology behind autonomous construction supply chains, Agentic AI, and Digital Twins.",
+    url: "https://www.intellibyld.com/glossary",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Glossary | IntelliByld",
+    description:
+      "Learn the terminology behind autonomous construction supply chains, Agentic AI, and Digital Twins.",
+    images: ["/og-image.png"],
+  },
 };
 
 export default function GlossaryPage() {

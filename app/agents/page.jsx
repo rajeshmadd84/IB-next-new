@@ -11,9 +11,27 @@ import Pricing from "@/components/use-cases/Pricing";
 import Tools from "@/components/use-cases/Tools";
 import React from "react";
 export const metadata = {
-  title: "Use Cases || MunAi - AI Writer & Copywriting Nextjs Template",
+  title: "AI Agents for Construction Supply Chain | IntelliByld",
   description:
     "Meet IntelliByld's autonomous agents for procurement, scheduling, and shipment — coordinating construction supply chains in real time.",
+  alternates: { canonical: "https://www.intellibyld.com/agents" },
+  openGraph: {
+    title: "AI Agents for Construction Supply Chain | IntelliByld",
+    description:
+      "Meet IntelliByld's autonomous agents for procurement, scheduling, and shipment — coordinating construction supply chains in real time.",
+    url: "https://www.intellibyld.com/agents",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "AI Agents for Construction Supply Chain | IntelliByld",
+    description:
+      "Meet IntelliByld's autonomous agents for procurement, scheduling, and shipment — coordinating construction supply chains in real time.",
+    images: ["/og-image.png"],
+  },
 };
 export default function page() {
   return (

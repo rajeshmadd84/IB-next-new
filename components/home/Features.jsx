@@ -12,7 +12,7 @@ export default function Doing() {
         <div className="row">
           <div className="col-12">
             <div className="heading-section wow fadeInUp style-1 text-center">
-              <h6 style={{ color: "#000000" }}>What is Intellibyld?</h6>
+              <h6 style={{ color: "#000000" }}>What is IntelliByld?</h6>
               <div className="main-title">
                 <span className="ib-color-blue">Autonomous Execution </span> &nbsp;
                 <br /> for Construction Supply Chains. <br />
@@ -31,7 +31,7 @@ export default function Doing() {
                   marginRight: "auto",
                 }}
               >
-                <strong>Intellibyld is the OS that turns construction supply chain data into Autonomous Execution.</strong>{" "}
+                <strong>IntelliByld is the OS that turns construction supply chain data into Autonomous Execution.</strong>{" "}
                 It helps teams coordinate procurement, shipping, and bid evaluation so execution stays on schedule.
               </p>
             </div>

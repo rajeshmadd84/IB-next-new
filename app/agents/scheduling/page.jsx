@@ -16,9 +16,30 @@ import Capabilities from "@/components/agents/scheduling/Capabilities";
 import UseCase from "@/components/agents/scheduling/UseCase";
 import WorksWith from "@/components/agents/scheduling/WorksWith";
 export const metadata = {
-  title: 'Predictive Scheduling Agent | BIM-Linked Material Call-Off Planning | Intellibyld',
+  title:
+    "Predictive Scheduling Agent | BIM-Linked Material Call-Off Planning | IntelliByld",
   description:
     "AI agent that aligns material delivery with BIM, weather, and crew progress — so materials arrive exactly when crews are ready.",
+  alternates: {
+    canonical: "https://www.intellibyld.com/agents/scheduling",
+  },
+  openGraph: {
+    title: "Predictive Scheduling Agent | IntelliByld",
+    description:
+      "AI agent that aligns material delivery with BIM, weather, and crew progress — so materials arrive exactly when crews are ready.",
+    url: "https://www.intellibyld.com/agents/scheduling",
+    siteName: "IntelliByld",
+    images: [{ url: "/og-image.png", width: 1200, height: 630 }],
+    locale: "en_SG",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Predictive Scheduling Agent | IntelliByld",
+    description:
+      "AI agent that aligns material delivery with BIM, weather, and crew progress — so materials arrive exactly when crews are ready.",
+    images: ["/og-image.png"],
+  },
 };
 
 
