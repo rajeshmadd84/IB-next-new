@@ -15,14 +15,6 @@ export default function Cta() {
                 width={158}
                 height={194}
               />
-              <div className="item3" />
-              <Image
-                className="item4"
-                src="/assets/images/item-background/cta-2.png"
-                alt="image"
-                width={180}
-                height={220}
-              />
               <div className="cta-title">
                 <h2>Run It on a Live Project</h2>
               </div>
