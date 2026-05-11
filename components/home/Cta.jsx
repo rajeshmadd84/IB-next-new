@@ -10,19 +10,12 @@ export default function Cta() {
               <div className="item1" />
               <Image
                 className="item2"
-                src="/assets/images/item-background/cta-1.png"
+                src="/assets/images/item-background/ibicon.png"
                 alt="image"
                 width={158}
                 height={194}
               />
-              <div className="item3" />
-              <Image
-                className="item4"
-                src="/assets/images/item-background/cta-2.png"
-                alt="image"
-                width={180}
-                height={220}
-              />
+              
               <div className="cta-title">
                 <h2>Run It on a Live Project</h2>
               </div>

@@ -38,9 +38,11 @@ export default function AgenticAi() {
               <Image
                 className="img-01"
                 src="/assets/images/bg-section/dgtwin4.png"
-                alt="image"
-                width={558}
-                height={522}
+                alt="IntelliByld Agentic AI orchestrating BIM models, ERP data, and supplier communications across a construction project"
+                width={1756}
+                height={2171}
+                sizes="(max-width: 991px) 100vw, 558px"
+                style={{ width: "100%", height: "auto" }}
               />
             </div>
           </div>

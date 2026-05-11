@@ -740,8 +740,8 @@ h6,
    IB-Blue blur blobs and line.png overlay show on a light surface. */
 .flat-title-page.flat-title-page-light {
   background: var(--color-primary-50);
-  padding-top: 130px;
-  padding-bottom: 50px;
+  padding-top: 200px;
+  padding-bottom: 100px;
 }
 
 .flat-title-page.flat-title-page-light .heading {
@@ -752,8 +752,8 @@ h6,
 
 @media (max-width: 600px) {
   .flat-title-page.flat-title-page-light {
-    padding-top: 110px;
-    padding-bottom: 40px;
+    padding-top: 150px;
+    padding-bottom: 60px;
   }
   .flat-title-page.flat-title-page-light .heading {
     font-size: 44px;

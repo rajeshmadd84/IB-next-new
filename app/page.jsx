@@ -5,6 +5,7 @@ import Cta from "@/components/home/Cta";
 import DigitalTwin from "@/components/home/DigitalTwin";
 import AgenticAi from "@/components/home/AgenticAi";
 import AgentsShowcase from "@/components/agentic-ai/AgentsShowcase";
+import ZeroIntegration from "@/components/home/ZeroIntegration";
 import Features from "@/components/home/Features";
 import EditorLanguages from "@/components/home/EditorLanguages";
 import Faq from "@/components/home/Faq";
@@ -218,7 +219,9 @@ export default function page() {
             <div className="lavender-line-bg">
               <AgenticAi />
               <AgentsShowcase />
+              <ZeroIntegration />
               <Cta />
+              
               <Team />
               <Faq />
             </div>
