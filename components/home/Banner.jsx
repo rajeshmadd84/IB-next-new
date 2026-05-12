@@ -22,8 +22,13 @@ export default function Banner() {
                 It uses a <strong>Construction-Trained SLM</strong> to keep your project on schedule and your carbon footprint on target.
               </p>
               <div className="grid-button flex gap20 items-center mb-50">
-                <a href="/pilot" className="tf-button style-2">
-                  <span>Request Free Demo</span>
+                <a
+                  href="/pilot"
+                  className="tf-button style-2"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <span>Join Pilot</span>
                   <i className="icon-arrow-right2" />
                 </a>
 

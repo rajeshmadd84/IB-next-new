@@ -51,8 +51,10 @@ export default function Header2() {
                 <Link
                   href={`/pilot`}
                   className="tf-button style-green get-start h45"
+                  target="_blank"
+                  rel="noopener noreferrer"
                 >
-                  <span>Get Started</span>
+                  <span>Join Pilot</span>
                   <i className="icon-arrow-right2" />
                 </Link>
               </div>
